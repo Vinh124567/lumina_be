@@ -20,7 +20,9 @@ import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Component
 import org.springframework.transaction.annotation.Transactional
 
-@Component
+// Đã nạp dữ liệu ban đầu lên PostgreSQL Neon thành công.
+// Tắt @Component để Spring Boot khởi động nhanh và nhẹ nhàng hơn.
+// @Component
 class DataInitializer(
     private val userRepository: UserRepository,
     private val lessonRepository: LessonRepository,
@@ -106,6 +108,176 @@ class DataInitializer(
         // NHÓM 1: NỀN TẢNG (FOUNDATION - Pinyin & Bộ thủ)
         // ==========================================
 
+        val lesson1GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Quy tắc Biến điệu hai Thanh 3 (三声变调)",
+            "formula": "Thanh 3 (ǎ) + Thanh 3 (ǎ) ➔ ĐỌC THÀNH: Thanh 2 (á) + Thanh 3 (ǎ)",
+            "explanation": "Trong ngữ lưu tiếng Hán, khi hai âm tiết mang thanh 3 đứng liền nhau, âm tiết thứ nhất bắt buộc phải chuyển sang phát âm như thanh 2 để câu nói không bị ngắt quãng, nặng nề. Lưu ý: Phiên âm Pinyin viết trên sách vẫn giữ nguyên dấu thanh 3, nhưng miệng người nói phải phát âm thành thanh 2!",
+            "examples": [
+              {
+                "hanzi": "你好 (Nǐ + hǎo)",
+                "pinyinOriginal": "Nǐ + hǎo",
+                "pinyinActual": "Phát âm thực tế: [Ní hǎo]",
+                "meaning": "Xin chào (Nǐ thanh 3 chuyển thành Ní thanh 2).",
+                "tip": "💡 Không nhận nhẹ âm Nǐ! Kéo ngắn đối với âm thứ hai người nghe.",
+                "warning": null,
+                "audioText": "你好"
+              },
+              {
+                "hanzi": "很好 (Hěn + hǎo)",
+                "pinyinOriginal": "Hěn + hǎo",
+                "pinyinActual": "Phát âm thực tế: [Hén hǎo]",
+                "meaning": "Rất tốt (Hěn thanh 3 chuyển thành Hén thanh 2).",
+                "tip": null,
+                "warning": "❌ Lỗi sai thường gặp: Hảo hảo (Đọc thành 4)\nNhiều người Việt hay nhầm thanh 3 với thanh 4, nên vuốt giọng đi lên từ cao độ 3 lên 5.",
+                "audioText": "很好"
+              },
+              {
+                "hanzi": "手表 (Shǒu + biǎo)",
+                "pinyinOriginal": "Shǒu + biǎo",
+                "pinyinActual": "Phát âm thực tế: [Shóu biǎo]",
+                "meaning": "Đồng hồ đeo tay.",
+                "tip": null,
+                "warning": null,
+                "audioText": "手表"
+              }
+            ],
+            "examTip": "Trong phần thi Nghe HSK 1 & HSK 2, máy tính đọc biến âm rất nhanh. Khi nghe [Ní hǎo] hay [Xíyī], thí sinh phải nhận ra ngay đó là các chữ \"你好\" hay \"洗衣\" để chọn đáp án tranh vẽ tương ứng!"
+          },
+          {
+            "structureOrder": 2,
+            "title": "Thanh nhẹ (Khinh thanh - 轻声)",
+            "formula": "Âm tiết thứ hai phát âm nhẹ, ngắn, không nhấn trọng âm.",
+            "explanation": "Một số từ láy hoặc trợ từ trong tiếng Trung mất đi thanh điệu gốc và phát âm rất nhẹ nhàng, ví dụ: 妈妈 (māma - chữ ma thứ 2 đọc nhẹ), 谢谢 (xièxie).",
+            "examples": [
+              {
+                "hanzi": "妈妈 · 妈妈",
+                "pinyinOriginal": "māma",
+                "pinyinActual": "māma",
+                "meaning": "Mẹ (từ láy gia đình đều xuống thanh khinh thanh ở âm tiết sau).",
+                "tip": null,
+                "warning": null,
+                "audioText": "妈妈"
+              },
+              {
+                "hanzi": "你的书",
+                "pinyinOriginal": "nǐ de shū",
+                "pinyinActual": "nǐ de shū",
+                "meaning": "Sách của bạn (trợ từ \"de\" phát âm nhẹ nhàng).",
+                "tip": null,
+                "warning": null,
+                "audioText": "你的书"
+              }
+            ],
+            "examTip": null
+          }
+        ]
+        """.trimIndent()
+
+        val lesson1DialoguesJson = """
+        [
+          {
+            "speakerRole": "A",
+            "speakerName": "王老师 (Thầy Vương)",
+            "chinese": "你好，大卫！",
+            "pinyin": "Nǐ hǎo, Dàwèi!",
+            "vietnamese": "Chào David!",
+            "badgeColor": "#5538EE"
+          },
+          {
+            "speakerRole": "B",
+            "speakerName": "大卫 (David)",
+            "chinese": "王老师，您好！",
+            "pinyin": "Wáng lǎoshī, nín hǎo!",
+            "vietnamese": "Kính chào thầy Vương!",
+            "badgeColor": "#059669"
+          },
+          {
+            "speakerRole": "A",
+            "speakerName": "王老师",
+            "chinese": "你身体好吗？",
+            "pinyin": "Nǐ shēntǐ hǎo ma?",
+            "vietnamese": "Em có khỏe không?",
+            "badgeColor": "#5538EE"
+          },
+          {
+            "speakerRole": "B",
+            "speakerName": "大卫",
+            "chinese": "我很好，谢谢老师！",
+            "pinyin": "Wǒ hěn hǎo, xièxie lǎoshī!",
+            "vietnamese": "Em rất khỏe, cảm ơn thầy ạ! (Biến điệu: hěn hǎo ➔ hén hǎo)",
+            "badgeColor": "#059669"
+          }
+        ]
+        """.trimIndent()
+
+        val lesson1CoreVocabJson = """
+        [
+          {
+            "hanzi": "妈",
+            "pinyin": "mā",
+            "hanViet": "Ma",
+            "meaning": "Mẹ (Thanh 1: cao, ngân vang 5–5)",
+            "partOfSpeech": "Danh từ",
+            "exampleHanzi": "妈妈爱我，我也爱妈妈。",
+            "examplePinyin": "Māma ài wǒ, wǒ yě ài māma.",
+            "exampleMeaning": "Mẹ yêu tôi, tôi cũng yêu mẹ."
+          },
+          {
+            "hanzi": "麻",
+            "pinyin": "má",
+            "hanViet": "Ma",
+            "meaning": "Cây gai / Tê rần (Thanh 2: đi lên dứt khoát 3–5)",
+            "partOfSpeech": "Danh từ / Tính từ",
+            "exampleHanzi": "我的脚麻了。",
+            "examplePinyin": "Wǒ de jiǎo má le.",
+            "exampleMeaning": "Chân tôi bị tê rồi."
+          },
+          {
+            "hanzi": "马",
+            "pinyin": "mǎ",
+            "hanViet": "Mã",
+            "meaning": "Con ngựa (Thanh 3: hạ xuống sâu rồi vòng lên 2–1–4)",
+            "partOfSpeech": "Danh từ",
+            "exampleHanzi": "草原上有很多白马。",
+            "examplePinyin": "Cǎoyuán shang yǒu hěn duō bái mǎ.",
+            "exampleMeaning": "Trên thảo nguyên có rất nhiều ngựa trắng."
+          },
+          {
+            "hanzi": "骂",
+            "pinyin": "mà",
+            "hanViet": "Mạ",
+            "meaning": "Mắng, chửi (Thanh 4: dứt khoát từ cao xuống thấp 5–1)",
+            "partOfSpeech": "Động từ",
+            "exampleHanzi": "老师没有骂他。",
+            "examplePinyin": "Lǎoshī méiyǒu mà tā.",
+            "exampleMeaning": "Thầy giáo không hề mắng bạn ấy."
+          },
+          {
+            "hanzi": "好",
+            "pinyin": "hǎo",
+            "hanViet": "Hảo",
+            "meaning": "Tốt, đẹp, hay, khỏe",
+            "partOfSpeech": "Tính từ",
+            "exampleHanzi": "今天天气很好。",
+            "examplePinyin": "Jīntiān tiānqì hěn hǎo.",
+            "exampleMeaning": "Thời tiết hôm nay rất tốt"
+          },
+          {
+            "hanzi": "很",
+            "pinyin": "hěn",
+            "hanViet": "Khẩn",
+            "meaning": "Rất, lắm (thường dùng trước tính từ)",
+            "partOfSpeech": "Phó từ",
+            "exampleHanzi": "汉语很有趣。",
+            "examplePinyin": "Hànyǔ hěn yǒuqù.",
+            "exampleMeaning": "Tiếng Trung rất thú vị"
+          }
+        ]
+        """.trimIndent()
+
         // Bài 1: Pinyin 4 Thanh điệu
         val lesson1 = Lesson(
             id = "lesson_pinyin_1",
@@ -122,7 +294,17 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 4,
             stage = "FOUNDATION",
-            orderIndex = 1
+            orderIndex = 1,
+            objectives = mutableListOf(
+                "Phân biệt chuẩn xác cao độ 4 thanh điệu tiếng Hán (5-5, 3-5, 2-1-4, 5-1) qua sơ đồ thanh điệu.",
+                "Nắm vững quy tắc biến điệu hai thanh 3 kinh điển trong giao tiếp và đề thi HSK.",
+                "Luyện tập phát âm chuẩn xác các âm tiết dễ nhầm lẫn như: mā, má, mǎ, mà, nǐ hǎo...",
+                "Tự tin phát âm từ vựng cơ bản mà không bị ngọng hay sai dấu tiếng Việt."
+            ),
+            grammarStructuresJson = lesson1GrammarJson,
+            dialogueContext = "💡 Ngữ cảnh: David gặp Thầy giáo Vương ở sân trường và chào hỏi áp dụng biến điệu hai thanh 3 (很好 ➔ hén hǎo).",
+            dialoguesJson = lesson1DialoguesJson,
+            coreVocabulariesJson = lesson1CoreVocabJson
         )
         val slide1_1 = LessonSlide(
             lesson = lesson1, slideIndex = 1, category = "PHÁT ÂM PINYIN", cardType = "Khái niệm",

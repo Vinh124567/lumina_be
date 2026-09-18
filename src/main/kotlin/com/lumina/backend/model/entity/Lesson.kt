@@ -50,6 +50,24 @@ class Lesson(
     @Column(nullable = false)
     var orderIndex: Int = 1,
 
+    @ElementCollection(fetch = FetchType.EAGER)
+    @CollectionTable(name = "lesson_objectives", joinColumns = [JoinColumn(name = "lesson_id")])
+    @Column(name = "objective", columnDefinition = "TEXT")
+    @OrderColumn(name = "objective_order")
+    var objectives: MutableList<String> = mutableListOf(),
+
+    @Column(columnDefinition = "TEXT")
+    var grammarStructuresJson: String = "[]",
+
+    @Column(columnDefinition = "TEXT")
+    var dialogueContext: String = "",
+
+    @Column(columnDefinition = "TEXT")
+    var dialoguesJson: String = "[]",
+
+    @Column(columnDefinition = "TEXT")
+    var coreVocabulariesJson: String = "[]",
+
     @OneToMany(mappedBy = "lesson", cascade = [CascadeType.ALL], orphanRemoval = true, fetch = FetchType.LAZY)
     @OrderBy("slideIndex ASC")
     var slides: MutableList<LessonSlide> = mutableListOf()

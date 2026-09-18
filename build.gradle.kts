@@ -24,7 +24,8 @@ dependencies {
     // Spring Security & Password Hashing
     implementation("org.springframework.boot:spring-boot-starter-security")
 
-    // Database: H2 in-memory (sẵn sàng kết nối MySQL/Postgres khi cần)
+    // Database: PostgreSQL Cloud (và H2 dự phòng)
+    runtimeOnly("org.postgresql:postgresql")
     runtimeOnly("com.h2database:h2")
 
     // JWT (JJWT)

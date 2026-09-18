@@ -1,6 +1,11 @@
 package com.lumina.backend.service
 
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import com.fasterxml.jackson.module.kotlin.readValue
+import com.lumina.backend.dto.response.DialogueLineResponse
+import com.lumina.backend.dto.response.GrammarStructureResponse
 import com.lumina.backend.dto.response.LessonResponse
+import com.lumina.backend.dto.response.LessonVocabResponse
 import com.lumina.backend.dto.response.SlideResponse
 import com.lumina.backend.exception.AppException
 import com.lumina.backend.exception.ErrorCode
@@ -13,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional
 class LessonService(
     private val lessonRepository: LessonRepository
 ) {
+    private val objectMapper = jacksonObjectMapper()
 
     @Transactional(readOnly = true)
     fun getRecommendedLessons(): List<LessonResponse> {
@@ -110,6 +116,36 @@ class LessonService(
             emptyList()
         }
 
+        val grammarStructures = try {
+            if (lesson.grammarStructuresJson.isNotBlank() && lesson.grammarStructuresJson != "[]") {
+                objectMapper.readValue<List<GrammarStructureResponse>>(lesson.grammarStructuresJson)
+            } else {
+                emptyList()
+            }
+        } catch (_: Exception) {
+            emptyList()
+        }
+
+        val dialogues = try {
+            if (lesson.dialoguesJson.isNotBlank() && lesson.dialoguesJson != "[]") {
+                objectMapper.readValue<List<DialogueLineResponse>>(lesson.dialoguesJson)
+            } else {
+                emptyList()
+            }
+        } catch (_: Exception) {
+            emptyList()
+        }
+
+        val coreVocabularies = try {
+            if (lesson.coreVocabulariesJson.isNotBlank() && lesson.coreVocabulariesJson != "[]") {
+                objectMapper.readValue<List<LessonVocabResponse>>(lesson.coreVocabulariesJson)
+            } else {
+                emptyList()
+            }
+        } catch (_: Exception) {
+            emptyList()
+        }
+
         return LessonResponse(
             id = lesson.id,
             category = lesson.category,
@@ -125,6 +161,11 @@ class LessonService(
             totalSlides = lesson.totalSlides,
             stage = lesson.stage,
             orderIndex = lesson.orderIndex,
+            objectives = lesson.objectives.toList(),
+            grammarStructures = grammarStructures,
+            dialogueContext = lesson.dialogueContext,
+            dialogues = dialogues,
+            coreVocabularies = coreVocabularies,
             slides = slides
         )
     }

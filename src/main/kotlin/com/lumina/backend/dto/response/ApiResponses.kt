@@ -71,6 +71,45 @@ data class SlideResponse(
     val totalCount: Int
 )
 
+data class GrammarExampleResponse(
+    val hanzi: String,
+    val pinyinOriginal: String = "",
+    val pinyinActual: String = "",
+    val meaning: String = "",
+    val tip: String? = null,
+    val warning: String? = null,
+    val audioText: String? = null
+)
+
+data class GrammarStructureResponse(
+    val structureOrder: Int,
+    val title: String,
+    val formula: String,
+    val explanation: String,
+    val examples: List<GrammarExampleResponse> = emptyList(),
+    val examTip: String? = null
+)
+
+data class DialogueLineResponse(
+    val speakerRole: String,
+    val speakerName: String,
+    val chinese: String,
+    val pinyin: String,
+    val vietnamese: String,
+    val badgeColor: String = "#5538EE"
+)
+
+data class LessonVocabResponse(
+    val hanzi: String,
+    val pinyin: String,
+    val hanViet: String,
+    val meaning: String,
+    val partOfSpeech: String,
+    val exampleHanzi: String,
+    val examplePinyin: String,
+    val exampleMeaning: String
+)
+
 data class LessonResponse(
     val id: String,
     val category: String,
@@ -86,6 +125,11 @@ data class LessonResponse(
     val totalSlides: Int,
     val stage: String = "FOUNDATION",
     val orderIndex: Int = 1,
+    val objectives: List<String> = emptyList(),
+    val grammarStructures: List<GrammarStructureResponse> = emptyList(),
+    val dialogueContext: String = "",
+    val dialogues: List<DialogueLineResponse> = emptyList(),
+    val coreVocabularies: List<LessonVocabResponse> = emptyList(),
     val slides: List<SlideResponse>
 )
 
