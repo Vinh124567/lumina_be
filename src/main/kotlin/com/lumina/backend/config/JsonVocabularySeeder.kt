@@ -29,6 +29,11 @@ class JsonVocabularySeeder(
             expectedCount = 1000,
             jsonResourcePath = "data/hsk4.json"
         )
+        seedHskLevelFromJson(
+            level = "HSK 5",
+            expectedCount = 1071,
+            jsonResourcePath = "data/hsk5.json"
+        )
     }
 
     private fun seedHskLevelFromJson(level: String, expectedCount: Int, jsonResourcePath: String) {

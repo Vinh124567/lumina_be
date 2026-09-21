@@ -160,6 +160,47 @@ class LuminaApplicationTests {
             assertEquals("HSK 4", item.hskLevel, "HSK 4 Từ '${item.hanzi}' có hskLevel không khớp!")
         }
 
+        // Kiểm tra HSK 5 từ data/hsk5.json
+        val hsk5Resource = org.springframework.core.io.ClassPathResource("data/hsk5.json")
+        assertTrue(hsk5Resource.exists(), "File data/hsk5.json phải tồn tại trong resources!")
+
+        val allHsk5: List<com.lumina.backend.model.entity.Vocabulary> = hsk5Resource.inputStream.use { stream ->
+            objectMapper.readValue(stream, object : com.fasterxml.jackson.core.type.TypeReference<List<com.lumina.backend.model.entity.Vocabulary>>() {})
+        }
+
+        println(">>> Total HSK 5 count from JSON: ${allHsk5.size}")
+        assertEquals(1071, allHsk5.size, "Tổng số từ vựng HSK 5 phải đủ chính xác 1.071 từ!")
+
+        val hsk5Duplicates = allHsk5.groupBy { it.hanzi }.filter { it.value.size > 1 }
+        assertTrue(hsk5Duplicates.isEmpty(), "Không được phép có từ Hanzi trùng lặp trong HSK 5! Tìm thấy: ${hsk5Duplicates.keys}")
+
+        val hsk4HanziSet = allHsk4.map { it.hanzi }.toSet()
+        val hsk5OverlapWithHsk1 = allHsk5.map { it.hanzi }.filter { hsk1HanziSet.contains(it) }
+        val hsk5OverlapWithHsk2 = allHsk5.map { it.hanzi }.filter { hsk2HanziSet.contains(it) }
+        val hsk5OverlapWithHsk3 = allHsk5.map { it.hanzi }.filter { hsk3HanziSet.contains(it) }
+        val hsk5OverlapWithHsk4 = allHsk5.map { it.hanzi }.filter { hsk4HanziSet.contains(it) }
+
+        assertTrue(hsk5OverlapWithHsk1.isEmpty(), "HSK 5 không được trùng với HSK 1! Trùng: $hsk5OverlapWithHsk1")
+        assertTrue(hsk5OverlapWithHsk2.isEmpty(), "HSK 5 không được trùng với HSK 2! Trùng: $hsk5OverlapWithHsk2")
+        assertTrue(hsk5OverlapWithHsk3.isEmpty(), "HSK 5 không được trùng với HSK 3! Trùng: $hsk5OverlapWithHsk3")
+        assertTrue(hsk5OverlapWithHsk4.isEmpty(), "HSK 5 không được trùng với HSK 4! Trùng: $hsk5OverlapWithHsk4")
+
+        // Kiểm tra chất lượng dữ liệu từng từ HSK 5
+        for ((index, item) in allHsk5.withIndex()) {
+            assertTrue(item.hanzi.isNotBlank(), "HSK 5 Từ thứ ${index + 1} có Hanzi bị rỗng!")
+            assertTrue(item.pinyin.isNotBlank(), "HSK 5 Từ '${item.hanzi}' có Pinyin bị rỗng!")
+            assertTrue(item.hanViet.isNotBlank(), "HSK 5 Từ '${item.hanzi}' có Hán Việt bị rỗng!")
+            assertTrue(item.meaning.isNotBlank(), "HSK 5 Từ '${item.hanzi}' có nghĩa bị rỗng!")
+            assertTrue(item.partOfSpeech.isNotBlank(), "HSK 5 Từ '${item.hanzi}' có từ loại bị rỗng!")
+            assertTrue(item.topic.isNotBlank(), "HSK 5 Từ '${item.hanzi}' có chủ đề bị rỗng!")
+            assertTrue(item.radical.isNotBlank(), "HSK 5 Từ '${item.hanzi}' có bộ thủ bị rỗng!")
+            assertTrue(item.strokes.isNotBlank(), "HSK 5 Từ '${item.hanzi}' có số nét bị rỗng!")
+            assertTrue(item.exampleHanzi.isNotBlank(), "HSK 5 Từ '${item.hanzi}' có câu ví dụ Hanzi bị rỗng!")
+            assertTrue(item.examplePinyin.isNotBlank(), "HSK 5 Từ '${item.hanzi}' có câu ví dụ Pinyin bị rỗng!")
+            assertTrue(item.exampleMeaning.isNotBlank(), "HSK 5 Từ '${item.hanzi}' có câu ví dụ nghĩa bị rỗng!")
+            assertEquals("HSK 5", item.hskLevel, "HSK 5 Từ '${item.hanzi}' có hskLevel không khớp!")
+        }
+
         // Kiểm tra DB & Seeder
         vocabularyRepository?.let { repo ->
             seeder?.run()
@@ -181,6 +222,10 @@ class LuminaApplicationTests {
             val dbHsk4Words = repo.findByHskLevel("HSK 4")
             println(">>> Số lượng từ vựng HSK 4 thực tế trong Neon PostgreSQL: ${dbHsk4Words.size}")
             assertEquals(1000, dbHsk4Words.size, "Số lượng từ vựng HSK 4 trong DB phải đúng 1000!")
+
+            val dbHsk5Words = repo.findByHskLevel("HSK 5")
+            println(">>> Số lượng từ vựng HSK 5 thực tế trong Neon PostgreSQL: ${dbHsk5Words.size}")
+            assertEquals(1071, dbHsk5Words.size, "Số lượng từ vựng HSK 5 trong DB phải đúng 1071!")
         }
     }
 }

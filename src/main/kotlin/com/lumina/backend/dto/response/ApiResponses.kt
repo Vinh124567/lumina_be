@@ -164,7 +164,8 @@ data class VocabularyResponse(
     val exampleMeaning: String,
     val hskLevel: String,
     val targetScore: String,
-    val isMastered: Boolean
+    val isMastered: Boolean,
+    val userId: Long? = null
 )
 
 data class HskLevelResponse(

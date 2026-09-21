@@ -49,5 +49,8 @@ data class Vocabulary(
     val targetScore: String = "HSK 1 (Mục tiêu 180–200/200 điểm)",
 
     @Column(nullable = false)
-    var isMastered: Boolean = false
+    var isMastered: Boolean = false,
+
+    @Column(name = "user_id", nullable = true)
+    var userId: Long? = null
 )

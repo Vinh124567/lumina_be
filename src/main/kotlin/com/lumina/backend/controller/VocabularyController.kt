@@ -43,6 +43,22 @@ class VocabularyController(
         return ResponseEntity.ok(ApiResponse.success(vocab, "Lấy chi tiết từ vựng thành công"))
     }
 
+    @PostMapping
+    fun createVocabulary(
+        @jakarta.validation.Valid @RequestBody request: com.lumina.backend.dto.request.CreateVocabularyRequest
+    ): ResponseEntity<ApiResponse<VocabularyResponse>> {
+        val created = vocabularyService.createVocabulary(request)
+        return ResponseEntity.ok(ApiResponse.success(created, "Thêm từ vựng mới thành công"))
+    }
+
+    @GetMapping("/ai-lookup")
+    fun aiLookup(
+        @RequestParam query: String
+    ): ResponseEntity<ApiResponse<VocabularyResponse>> {
+        val result = vocabularyService.aiLookup(query)
+        return ResponseEntity.ok(ApiResponse.success(result, "Tra cứu thông tin từ vựng thành công"))
+    }
+
     @PutMapping("/{id}/toggle-mastered")
     fun toggleMastered(@PathVariable id: Long): ResponseEntity<ApiResponse<VocabularyResponse>> {
         val updated = vocabularyService.toggleMastered(id)
