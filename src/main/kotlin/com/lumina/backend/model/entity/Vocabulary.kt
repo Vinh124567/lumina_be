@@ -52,5 +52,20 @@ data class Vocabulary(
     var isMastered: Boolean = false,
 
     @Column(name = "user_id", nullable = true)
-    var userId: Long? = null
+    var userId: Long? = null,
+
+    @Column(name = "srs_repetition", columnDefinition = "integer default 0")
+    var srsRepetition: Int = 0,
+
+    @Column(name = "srs_interval_days", columnDefinition = "integer default 0")
+    var srsIntervalDays: Int = 0,
+
+    @Column(name = "srs_ease_factor", columnDefinition = "real default 2.5")
+    var srsEaseFactor: Float = 2.5f,
+
+    @Column(name = "next_review_time_millis", columnDefinition = "bigint default 0")
+    var nextReviewTimeMillis: Long = 0L,
+
+    @Column(name = "last_review_time_millis", columnDefinition = "bigint default 0")
+    var lastReviewTimeMillis: Long = 0L
 )

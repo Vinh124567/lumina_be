@@ -64,4 +64,13 @@ class VocabularyController(
         val updated = vocabularyService.toggleMastered(id)
         return ResponseEntity.ok(ApiResponse.success(updated, "Cập nhật trạng thái từ vựng thành công"))
     }
+
+    @PutMapping("/{id}/srs-rating")
+    fun updateSrsRating(
+        @PathVariable id: Long,
+        @RequestBody request: com.lumina.backend.dto.request.UpdateSrsRatingRequest
+    ): ResponseEntity<ApiResponse<VocabularyResponse>> {
+        val updated = vocabularyService.updateSrsRating(id, request)
+        return ResponseEntity.ok(ApiResponse.success(updated, "Cập nhật chu kỳ SRS thành công"))
+    }
 }

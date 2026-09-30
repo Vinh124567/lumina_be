@@ -263,6 +263,19 @@ class VocabularyService(
         return saved.toResponse()
     }
 
+    @Transactional
+    fun updateSrsRating(id: Long, request: com.lumina.backend.dto.request.UpdateSrsRatingRequest): VocabularyResponse {
+        val vocab = vocabularyRepository.findById(id)
+            .orElseThrow { IllegalArgumentException("Không tìm thấy từ vựng với id $id") }
+        vocab.srsRepetition = request.repetition
+        vocab.srsIntervalDays = request.intervalDays
+        vocab.srsEaseFactor = request.easeFactor
+        vocab.nextReviewTimeMillis = request.nextReviewTimeMillis
+        vocab.lastReviewTimeMillis = request.lastReviewTimeMillis
+        val saved = vocabularyRepository.save(vocab)
+        return saved.toResponse()
+    }
+
     private fun Vocabulary.toResponse(): VocabularyResponse {
         return VocabularyResponse(
             id = this.id.toString(),
@@ -280,7 +293,12 @@ class VocabularyService(
             hskLevel = this.hskLevel,
             targetScore = this.targetScore,
             isMastered = this.isMastered,
-            userId = this.userId
+            userId = this.userId,
+            srsRepetition = this.srsRepetition,
+            srsIntervalDays = this.srsIntervalDays,
+            srsEaseFactor = this.srsEaseFactor,
+            nextReviewTimeMillis = this.nextReviewTimeMillis,
+            lastReviewTimeMillis = this.lastReviewTimeMillis
         )
     }
 }

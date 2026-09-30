@@ -165,7 +165,12 @@ data class VocabularyResponse(
     val hskLevel: String,
     val targetScore: String,
     val isMastered: Boolean,
-    val userId: Long? = null
+    val userId: Long? = null,
+    val srsRepetition: Int = 0,
+    val srsIntervalDays: Int = 0,
+    val srsEaseFactor: Float = 2.5f,
+    val nextReviewTimeMillis: Long = 0L,
+    val lastReviewTimeMillis: Long = 0L
 )
 
 data class HskLevelResponse(
