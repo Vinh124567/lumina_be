@@ -29,7 +29,77 @@ class VocabularyService(
         return null
     }
 
+    @Transactional
+    fun syncVocabulariesFromResource(force: Boolean = false): Int {
+        if (!force && vocabularyRepository.count() > 0L) {
+            return vocabularyRepository.count().toInt()
+        }
+
+        try {
+            val inputStream = javaClass.classLoader.getResourceAsStream("data/vocabularies_full.json")
+                ?: return 0
+
+            val mapper = com.fasterxml.jackson.module.kotlin.jacksonObjectMapper()
+            val rootNode = mapper.readTree(inputStream)
+            val list = mutableListOf<Vocabulary>()
+
+            rootNode.forEach { node ->
+                val hanzi = node.get("hanzi")?.asText() ?: ""
+                if (hanzi.isNotBlank()) {
+                    val pinyin = node.get("pinyin")?.asText() ?: ""
+                    val hanViet = node.get("hanViet")?.asText() ?: ""
+                    val meaning = node.get("meaning")?.asText() ?: ""
+                    val partOfSpeech = node.get("partOfSpeech")?.asText() ?: "Từ vựng"
+                    val topic = node.get("topic")?.asText() ?: "Đời sống & Xã hội"
+                    val radical = node.get("radical")?.asText() ?: ""
+                    val strokes = node.get("strokes")?.asText() ?: ""
+                    val exampleHanzi = node.get("exampleHanzi")?.asText() ?: ""
+                    val examplePinyin = node.get("examplePinyin")?.asText() ?: ""
+                    val exampleMeaning = node.get("exampleMeaning")?.asText() ?: ""
+                    val hskLevel = node.get("hskLevel")?.asText() ?: "HSK 1"
+                    val targetScore = node.get("targetScore")?.asText() ?: "$hskLevel (Mục tiêu chuẩn)"
+
+                    list.add(
+                        Vocabulary(
+                            hanzi = hanzi,
+                            pinyin = pinyin,
+                            hanViet = hanViet,
+                            meaning = meaning,
+                            partOfSpeech = partOfSpeech,
+                            topic = topic,
+                            radical = radical,
+                            strokes = strokes,
+                            exampleHanzi = exampleHanzi,
+                            examplePinyin = examplePinyin,
+                            exampleMeaning = exampleMeaning,
+                            hskLevel = hskLevel,
+                            targetScore = targetScore,
+                            isMastered = false,
+                            userId = null
+                        )
+                    )
+                }
+            }
+
+            if (force) {
+                vocabularyRepository.deleteAll()
+            }
+
+            if (list.isNotEmpty()) {
+                vocabularyRepository.saveAll(list)
+            }
+
+            return list.size
+        } catch (e: Exception) {
+            println(">>> Lỗi khi nạp dữ liệu vocabularies_full.json: ${e.message}")
+            return 0
+        }
+    }
+
     private fun getAccessibleVocabularies(): List<Vocabulary> {
+        if (vocabularyRepository.count() == 0L) {
+            syncVocabulariesFromResource(force = false)
+        }
         val currentUserId = getCurrentUserId()
         return if (currentUserId != null) {
             vocabularyRepository.findAllSystemAndUserVocabularies(currentUserId)

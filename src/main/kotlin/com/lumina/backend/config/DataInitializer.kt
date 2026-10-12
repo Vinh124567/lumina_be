@@ -284,7 +284,7 @@ class DataInitializer(
             category = "PHÁT ÂM PINYIN",
             categoryBgColor = "#FCE7F3",
             categoryTextColor = "#9333EA",
-            level = "Cơ bản",
+            level = "HSK 1",
             pinyinHanziTitle = "四声与变调 · PINYIN",
             title = "4 Thanh điệu Pinyin & Quy tắc biến âm",
             description = "Làm chủ 4 thanh điệu cốt lõi (mā, má, mǎ, mà) và quy tắc biến điệu hai thanh 3 để phát âm chuẩn xác như người bản xứ.",
@@ -374,7 +374,7 @@ class DataInitializer(
             category = "BỘ THỦ CƠ BẢN",
             categoryBgColor = "#DBEAFE",
             categoryTextColor = "#2563EB",
-            level = "Cơ bản",
+            level = "HSK 1",
             pinyinHanziTitle = "常用偏旁 · BỘ THỦ",
             title = "20 Bộ thủ thường gặp nhất trong HSK 1-2",
             description = "Nhận diện các bộ thủ nền tảng: bộ Nhân (亻), bộ Thủy (氵), bộ Mộc (木)... để suy đoán nghĩa từ vựng.",
@@ -447,7 +447,7 @@ class DataInitializer(
             category = "PHÁT ÂM PINYIN",
             categoryBgColor = "#FCE7F3",
             categoryTextColor = "#9333EA",
-            level = "Cơ bản",
+            level = "HSK 1",
             pinyinHanziTitle = "平翘舌音 · PHÁT ÂM",
             title = "Phân biệt âm đầu lưỡi (z, c, s) & uốn lưỡi (zh, ch, sh, r)",
             description = "Làm chủ vị trí đặt lưỡi để nói chuẩn giọng Bắc Kinh và không bị lẫn lộn giữa các âm tương tự nhau.",
@@ -519,6 +519,38 @@ class DataInitializer(
         // ==========================================
 
         // Bài 4: Chào hỏi cơ bản
+        val lesson4GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Đại từ nghi vấn '什么' (Shénme) — Cái gì / Gì",
+            "formula": "Chủ ngữ + Động từ + 什么 (+ Danh từ)？",
+            "explanation": "Đại từ nghi vấn '什么' dùng để hỏi về sự vật, tính chất hoặc tên gọi. Trong tiếng Trung, đại từ nghi vấn giữ nguyên vị trí ngữ pháp của thành phần được hỏi, không đảo lên đầu câu.",
+            "examples": [
+              {
+                "hanzi": "你叫什么名字？",
+                "pinyinOriginal": "Nǐ jiào shénme míngzi?",
+                "pinyinActual": "Nǐ jiào shénme míngzi?",
+                "meaning": "Bạn tên là gì? (Bạn gọi là tên gì?)",
+                "tip": "Mẫu câu hỏi tên kinh điển số 1 của HSK 1.",
+                "warning": null,
+                "audioText": "你叫什么名字？"
+              },
+              {
+                "hanzi": "这是什么书？",
+                "pinyinOriginal": "Zhè shì shénme shū?",
+                "pinyinActual": "Zhè shì shénme shū?",
+                "meaning": "Đây là cuốn sách gì?",
+                "tip": null,
+                "warning": null,
+                "audioText": "这是什么书？"
+              }
+            ],
+            "examTip": "Trong bài thi Đọc HSK 1: Câu hỏi chứa '什么' thường ghép đôi với câu trả lời chứa danh từ chỉ đồ vật hoặc tên riêng."
+          }
+        ]
+        """.trimIndent()
+
         val lesson4 = Lesson(
             id = "lesson_conversation_1",
             category = "GIAO TIẾP THỰC TẾ",
@@ -534,7 +566,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 4,
             stage = "CONVERSATION",
-            orderIndex = 4
+            orderIndex = 4,
+            grammarStructuresJson = lesson4GrammarJson
         )
         val slide4_1 = LessonSlide(
             lesson = lesson4, slideIndex = 1, category = "HỘI THOẠI HÀNG NGÀY", cardType = "Chào hỏi",
@@ -592,6 +625,38 @@ class DataInitializer(
         lessonRepository.save(lesson4)
 
         // Bài 5: Số đếm 1-10 & Mua sắm
+        val lesson5GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Cấu trúc hỏi giá tiền '多少钱' (Duōshǎo qián)",
+            "formula": "Đồ vật / Số lượng + 多少钱？",
+            "explanation": "'多少' là đại từ nghi vấn hỏi số lượng. Đi kèm với '钱' (tiền) tạo thành mẫu câu cố định hỏi giá cả trong mua sắm và thi HSK.",
+            "examples": [
+              {
+                "hanzi": "这个苹果多少钱？",
+                "pinyinOriginal": "Zhè ge píngguǒ duōshǎo qián?",
+                "pinyinActual": "Zhè ge píngguǒ duōshǎo qián?",
+                "meaning": "Quả táo này bao nhiêu tiền?",
+                "tip": null,
+                "warning": "Không nói '这个几钱', bắt buộc dùng '多少钱'.",
+                "audioText": "这个苹果多少钱？"
+              },
+              {
+                "hanzi": "三块钱一斤。",
+                "pinyinOriginal": "Sān kuài qián yì jīn.",
+                "pinyinActual": "Sān kuài qián yì jīn.",
+                "meaning": "3 đồng một cân (khoảng 500g).",
+                "tip": "Khẩu ngữ hàng ngày dùng 块 (kuài) thay cho 元 (yuán).",
+                "warning": null,
+                "audioText": "三块钱一斤。"
+              }
+            ],
+            "examTip": "HSK 1: Đơn vị tiền tệ khẩu ngữ là 块 (kuài) và 毛 (máo). Đơn vị văn viết trang trọng là 元 (yuán) và 角 (jiǎo)."
+          }
+        ]
+        """.trimIndent()
+
         val lesson5 = Lesson(
             id = "lesson_conversation_2",
             category = "GIAO TIẾP THỰC TẾ",
@@ -607,7 +672,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 4,
             stage = "CONVERSATION",
-            orderIndex = 5
+            orderIndex = 5,
+            grammarStructuresJson = lesson5GrammarJson
         )
         val slide5_1 = LessonSlide(
             lesson = lesson5, slideIndex = 1, category = "HỘI THOẠI HÀNG NGÀY", cardType = "Số đếm",
@@ -669,6 +735,65 @@ class DataInitializer(
         // ==========================================
 
         // Bài 6: Câu chữ "是"
+        val lesson6GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Câu khẳng định chữ '是' (Shì) — Là",
+            "formula": "Chủ ngữ A + 是 + Danh từ B",
+            "explanation": "Động từ phán đoán '是' biểu thị sự đồng nhất hoặc phân loại giữa A và B. Tuyệt đối không dùng '是' trước tính từ đơn thuần (Sai: 我是好, Đúng: 我很好).",
+            "examples": [
+              {
+                "hanzi": "我是学生。",
+                "pinyinOriginal": "Wǒ shì xuésheng.",
+                "pinyinActual": "Wǒ shì xuésheng.",
+                "meaning": "Tôi là học sinh.",
+                "tip": null,
+                "warning": null,
+                "audioText": "我是学生。"
+              },
+              {
+                "hanzi": "他是中国人。",
+                "pinyinOriginal": "Tā shì Zhōngguórén.",
+                "pinyinActual": "Tā shì Zhōngguórén.",
+                "meaning": "Anh ấy là người Trung Quốc.",
+                "tip": null,
+                "warning": null,
+                "audioText": "他是中国人。"
+              }
+            ],
+            "examTip": "Trong đề thi HSK 1: Danh từ đứng sau '是' thường là nghề nghiệp (老师, 医生) hoặc quốc tịch (中国人, 美国人)."
+          },
+          {
+            "structureOrder": 2,
+            "title": "Câu phủ định '不是' (Bú shì) — Không phải là",
+            "formula": "Chủ ngữ A + 不是 + Danh từ B",
+            "explanation": "Đặt phó từ 不 trước 是. Do 是 mang thanh 4 nên 不 tự động biến âm đọc thành 'bú' (thanh 2).",
+            "examples": [
+              {
+                "hanzi": "他不是医生。",
+                "pinyinOriginal": "Tā bú shì yīshēng.",
+                "pinyinActual": "Tā bú shì yīshēng.",
+                "meaning": "Anh ấy không phải là bác sĩ.",
+                "tip": null,
+                "warning": null,
+                "audioText": "他不是医生。"
+              },
+              {
+                "hanzi": "这不是我的书。",
+                "pinyinOriginal": "Zhè bú shì wǒ de shū.",
+                "pinyinActual": "Zhè bú shì wǒ de shū.",
+                "meaning": "Đây không phải là sách của tôi.",
+                "tip": null,
+                "warning": null,
+                "audioText": "这不是我的书。"
+              }
+            ],
+            "examTip": "Lưu ý bài thi nghe: Âm đọc thực tế là [bú shì], đừng nhầm với [bù shì]."
+          }
+        ]
+        """.trimIndent()
+
         val lesson6 = Lesson(
             id = "lesson_grammar_shi",
             category = "NGỮ PHÁP TRỌNG ĐIỂM",
@@ -684,7 +809,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 4,
             stage = "GRAMMAR",
-            orderIndex = 6
+            orderIndex = 6,
+            grammarStructuresJson = lesson6GrammarJson
         )
         val slide6_1 = LessonSlide(
             lesson = lesson6, slideIndex = 1, category = "NGỮ PHÁP HSK 1", cardType = "Khẳng định",
@@ -742,6 +868,65 @@ class DataInitializer(
         lessonRepository.save(lesson6)
 
         // Bài 7: Câu chữ "有"
+        val lesson7GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Câu chữ '有' biểu thị sở hữu — Có",
+            "formula": "Chủ ngữ + 有 + Tân ngữ",
+            "explanation": "Biểu thị ai đó sở hữu đồ vật gì hoặc số lượng thành viên trong gia đình. Phủ định bắt buộc phải dùng '没有' (méiyǒu), tuyệt đối không dùng '不有'!",
+            "examples": [
+              {
+                "hanzi": "我有三本汉语书。",
+                "pinyinOriginal": "Wǒ yǒu sān běn Hànyǔ shū.",
+                "pinyinActual": "Wǒ yǒu sān běn Hànyǔ shū.",
+                "meaning": "Tôi có 3 cuốn sách tiếng Trung.",
+                "tip": "Nhớ dùng lượng từ '本' (běn) cho sách báo.",
+                "warning": null,
+                "audioText": "我有三本汉语书。"
+              },
+              {
+                "hanzi": "我没有车。",
+                "pinyinOriginal": "Wǒ méiyǒu chē.",
+                "pinyinActual": "Wǒ méiyǒu chē.",
+                "meaning": "Tôi không có xe.",
+                "tip": null,
+                "warning": "❌ Cấm kỵ: Tuyệt đối không nói '我不有车'!",
+                "audioText": "我没有车。"
+              }
+            ],
+            "examTip": "HSK 1: Khi đếm số thành viên trong gia đình, lượng từ bắt buộc là '口' (kǒu): 我家有五口人."
+          },
+          {
+            "structureOrder": 2,
+            "title": "Câu tồn hiện nơi chốn với chữ '有' — Ở đâu có cái gì",
+            "formula": "Nơi chốn / Vị trí + 有 + Người / Đồ vật",
+            "explanation": "Dùng để miêu tả cảnh vật, đồ vật đang hiện diện tại một không gian xác định.",
+            "examples": [
+              {
+                "hanzi": "桌子上有一本书。",
+                "pinyinOriginal": "Zhuōzi shang yǒu yì běn shū.",
+                "pinyinActual": "Zhuōzi shang yǒu yì běn shū.",
+                "meaning": "Trên bàn có một cuốn sách.",
+                "tip": null,
+                "warning": null,
+                "audioText": "桌子上有一本书。"
+              },
+              {
+                "hanzi": "学校里有很多学生。",
+                "pinyinOriginal": "Xuéxiào lǐ yǒu hěn duō xuésheng.",
+                "pinyinActual": "Xuéxiào lǐ yǒu hěn duō xuésheng.",
+                "meaning": "Trong trường có rất nhiều học sinh.",
+                "tip": null,
+                "warning": null,
+                "audioText": "学校里有很多学生。"
+              }
+            ],
+            "examTip": "Phương vị từ (上, 下, 里) đứng ngay sau danh từ để tạo thành từ chỉ nơi chốn: 桌子上, 椅子下."
+          }
+        ]
+        """.trimIndent()
+
         val lesson7 = Lesson(
             id = "lesson_grammar_you",
             category = "NGỮ PHÁP TRỌNG ĐIỂM",
@@ -757,7 +942,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 4,
             stage = "GRAMMAR",
-            orderIndex = 7
+            orderIndex = 7,
+            grammarStructuresJson = lesson7GrammarJson
         )
         val slide7_1 = LessonSlide(
             lesson = lesson7, slideIndex = 1, category = "NGỮ PHÁP HSK 1", cardType = "Sở hữu",
@@ -815,6 +1001,92 @@ class DataInitializer(
         lessonRepository.save(lesson7)
 
         // Bài 8: Trợ từ 吗, 呢, 吧
+        val lesson8GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Trợ từ ngữ khí '吗' (Ma) — Câu hỏi Yes/No",
+            "formula": "Câu khẳng định + 吗？",
+            "explanation": "Đứng ở cuối câu để tạo thành câu hỏi nghi vấn toàn bộ. Người nghe chỉ cần trả lời bằng câu khẳng định hoặc phủ định.",
+            "examples": [
+              {
+                "hanzi": "你是老师吗？",
+                "pinyinOriginal": "Nǐ shì lǎoshī ma?",
+                "pinyinActual": "Nǐ shì lǎoshī ma?",
+                "meaning": "Bạn là giáo viên phải không?",
+                "tip": null,
+                "warning": null,
+                "audioText": "你是老师吗？"
+              },
+              {
+                "hanzi": "你喝茶吗？",
+                "pinyinOriginal": "Nǐ hē chá ma?",
+                "pinyinActual": "Nǐ hē chá ma?",
+                "meaning": "Bạn uống trà không?",
+                "tip": null,
+                "warning": null,
+                "audioText": "你喝茶吗？"
+              }
+            ],
+            "examTip": "Nếu trong câu đã có đại từ nghi vấn (什么, 谁, 哪儿, 多少) thì TUYỆT ĐỐI KHÔNG thêm 吗 ở cuối câu!"
+          },
+          {
+            "structureOrder": 2,
+            "title": "Trợ từ ngữ khí '呢' (Ne) — Hỏi tiếp nối tỉnh lược",
+            "formula": "Danh từ / Đại từ + 呢？",
+            "explanation": "Dùng để hỏi tiếp nối khi chủ đề câu chuyện đã được nhắc ở câu trước: 'Còn... thì sao?'. Hoặc dùng để hỏi tung tích người/vật đang ở đâu.",
+            "examples": [
+              {
+                "hanzi": "我很好，你呢？",
+                "pinyinOriginal": "Wǒ hěn hǎo, nǐ ne?",
+                "pinyinActual": "Wǒ hěn hǎo, nǐ ne?",
+                "meaning": "Tôi rất khỏe, còn bạn thì sao?",
+                "tip": null,
+                "warning": null,
+                "audioText": "我很好，你呢？"
+              },
+              {
+                "hanzi": "我的手机呢？",
+                "pinyinOriginal": "Wǒ de shǒujī ne?",
+                "pinyinActual": "Wǒ de shǒujī ne?",
+                "meaning": "Điện thoại của tôi đâu rồi?",
+                "tip": null,
+                "warning": null,
+                "audioText": "我的手机呢？"
+              }
+            ],
+            "examTip": "Trợ từ 呢 đọc thanh nhẹ lướt nhanh, không mang dấu thanh điệu."
+          },
+          {
+            "structureOrder": 3,
+            "title": "Trợ từ ngữ khí '吧' (Ba) — Rủ rê, đề nghị, phỏng đoán",
+            "formula": "Đề xuất / Hành động + 吧！",
+            "explanation": "Biểu thị ngữ khí rủ rê, khuyên nhủ nhẹ nhàng hoặc phỏng đoán điều đã nắm chắc 80%.",
+            "examples": [
+              {
+                "hanzi": "我们走吧！",
+                "pinyinOriginal": "Wǒmen zǒu ba!",
+                "pinyinActual": "Wǒmen zǒu ba!",
+                "meaning": "Chúng mình đi thôi nào!",
+                "tip": null,
+                "warning": null,
+                "audioText": "我们走吧！"
+              },
+              {
+                "hanzi": "太贵了，便宜点吧！",
+                "pinyinOriginal": "Tài guì le, piányi diǎn ba!",
+                "pinyinActual": "Tài guì le, piányi diǎn ba!",
+                "meaning": "Đắt quá, bớt chút đi nha!",
+                "tip": null,
+                "warning": null,
+                "audioText": "太贵了，便宜点吧！"
+              }
+            ],
+            "examTip": null
+          }
+        ]
+        """.trimIndent()
+
         val lesson8 = Lesson(
             id = "lesson_grammar_questions",
             category = "NGỮ PHÁP TRỌNG ĐIỂM",
@@ -830,7 +1102,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 4,
             stage = "GRAMMAR",
-            orderIndex = 8
+            orderIndex = 8,
+            grammarStructuresJson = lesson8GrammarJson
         )
         val slide8_1 = LessonSlide(
             lesson = lesson8, slideIndex = 1, category = "NGỮ PHÁP HSK 1", cardType = "Khái niệm",
@@ -892,6 +1165,38 @@ class DataInitializer(
         // ==========================================
 
         // Bài 9: Thời gian & Lên lịch hẹn
+        val lesson9GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Cấu trúc diễn đạt thời gian trong tiếng Trung",
+            "formula": "Trật tự từ LỚN đến BÉ: Buổi / Ngày + Giờ (点) + Phút (分)",
+            "explanation": "Quy tắc cốt lõi: Tiếng Trung luôn đi từ đơn vị thời gian lớn nhất đến nhỏ nhất (Năm ➔ Tháng ➔ Ngày ➔ Buổi ➔ Giờ ➔ Phút). Giờ rưỡi dùng 半 (bàn), giờ kém dùng 差 (chà).",
+            "examples": [
+              {
+                "hanzi": "现在八点半。",
+                "pinyinOriginal": "Xiànzài bā diǎn bàn.",
+                "pinyinActual": "Xiànzài bā diǎn bàn.",
+                "meaning": "Bây giờ là 8 giờ rưỡi (8:30).",
+                "tip": null,
+                "warning": null,
+                "audioText": "现在八点半。"
+              },
+              {
+                "hanzi": "我们明天下午三点见面。",
+                "pinyinOriginal": "Wǒmen míngtiān xiàwǔ sān diǎn jiànmiàn.",
+                "pinyinActual": "Wǒmen míngtiān xiàwǔ sān diǎn jiànmiàn.",
+                "meaning": "Chúng ta gặp nhau lúc 3 giờ chiều ngày mai.",
+                "tip": "Trạng ngữ chỉ thời gian đứng trước động từ chính.",
+                "warning": null,
+                "audioText": "我们明天下午三点见面。"
+              }
+            ],
+            "examTip": "Trong phần thi Nghe HSK 2, các mốc giờ kém (差) và giờ rưỡi (半) xuất hiện liên tục trong các đoạn hội thoại đặt lịch hẹn."
+          }
+        ]
+        """.trimIndent()
+
         val lesson9 = Lesson(
             id = "lesson_hsk2_time",
             category = "GIAO TIẾP THỰC TẾ",
@@ -907,7 +1212,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 2,
             stage = "CONVERSATION",
-            orderIndex = 9
+            orderIndex = 9,
+            grammarStructuresJson = lesson9GrammarJson
         )
         val slide9_1 = LessonSlide(
             lesson = lesson9, slideIndex = 1, category = "GIAO TIẾP THỰC TẾ", cardType = "Giờ giấc",
@@ -935,6 +1241,38 @@ class DataInitializer(
         lessonRepository.save(lesson9)
 
         // Bài 10: Hỏi đường & Định vị
+        val lesson10GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Giới từ chỉ phương hướng '往' / '向' — Hướng về phía...",
+            "formula": "往 / 向 + Phương hướng + Động từ (走 / 拐)",
+            "explanation": "Giới từ 往 (wǎng) biểu thị phương hướng của hành động chuyển động. Rẽ trái: 往左拐 (wǎng zuǒ guǎi), đi thẳng: 往前走 (wǎng qián zǒu).",
+            "examples": [
+              {
+                "hanzi": "往前一直走，往右拐。",
+                "pinyinOriginal": "Wǎng qián yìzhí zǒu, wǎng yòu guǎi.",
+                "pinyinActual": "Wǎng qián yìzhí zǒu, wǎng yòu guǎi.",
+                "meaning": "Cứ đi thẳng về phía trước, rồi rẽ sang bên phải.",
+                "tip": null,
+                "warning": null,
+                "audioText": "往前一直走，往右拐。"
+              },
+              {
+                "hanzi": "请问，去银行怎么走？",
+                "pinyinOriginal": "Qǐngwèn, qù yínháng zěnme zǒu?",
+                "pinyinActual": "Qǐngwèn, qù yínháng zěnme zǒu?",
+                "meaning": "Xin hỏi, đi đến ngân hàng đi như thế nào?",
+                "tip": "Mẫu câu hỏi đường thông dụng nhất trong HSK 2.",
+                "warning": null,
+                "audioText": "请问，去银行怎么走？"
+              }
+            ],
+            "examTip": "HSK 2: '怎么走' (hỏi cách đi/đường đi) khác với '怎么去' (hỏi phương tiện đi lại như đi xe bus hay tàu điện)."
+          }
+        ]
+        """.trimIndent()
+
         val lesson10 = Lesson(
             id = "lesson_hsk2_direction",
             category = "GIAO TIẾP THỰC TẾ",
@@ -950,7 +1288,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 2,
             stage = "CONVERSATION",
-            orderIndex = 10
+            orderIndex = 10,
+            grammarStructuresJson = lesson10GrammarJson
         )
         val slide10_1 = LessonSlide(
             lesson = lesson10, slideIndex = 1, category = "GIAO TIẾP THỰC TẾ", cardType = "Chỉ dẫn",
@@ -978,6 +1317,38 @@ class DataInitializer(
         lessonRepository.save(lesson10)
 
         // Bài 11: Trợ từ kết cấu "的"
+        val lesson11GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Trợ từ kết cấu '的' (De) — Định ngữ và Sở hữu",
+            "formula": "Định ngữ + 的 + Danh từ trung tâm",
+            "explanation": "Thành phần bổ nghĩa, miêu tả (sở hữu, tính từ, mệnh đề) luôn đứng TRƯỚC chữ '的'. Danh từ chính được bổ nghĩa luôn đứng SAU chữ '的'.",
+            "examples": [
+              {
+                "hanzi": "这是我的新手机。",
+                "pinyinOriginal": "Zhè shì wǒ de xīn shǒujī.",
+                "pinyinActual": "Zhè shì wǒ de xīn shǒujī.",
+                "meaning": "Đây là điện thoại mới của tôi.",
+                "tip": null,
+                "warning": null,
+                "audioText": "这是我的新手机。"
+              },
+              {
+                "hanzi": "漂亮的衣服。",
+                "pinyinOriginal": "Piàoliang de yīfu.",
+                "pinyinActual": "Piàoliang de yīfu.",
+                "meaning": "Bộ quần áo xinh đẹp.",
+                "tip": "Tính từ 2 âm tiết miêu tả danh từ thường bắt buộc phải có 的.",
+                "warning": null,
+                "audioText": "漂亮的衣服。"
+              }
+            ],
+            "examTip": "Trong phần thi sắp xếp câu HSK 2: Cứ thấy '的' thì danh từ theo sau nó luôn là đối tượng chính của câu!"
+          }
+        ]
+        """.trimIndent()
+
         val lesson11 = Lesson(
             id = "lesson_hsk2_grammar_de",
             category = "NGỮ PHÁP TRỌNG ĐIỂM",
@@ -993,7 +1364,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 2,
             stage = "GRAMMAR",
-            orderIndex = 11
+            orderIndex = 11,
+            grammarStructuresJson = lesson11GrammarJson
         )
         val slide11_1 = LessonSlide(
             lesson = lesson11, slideIndex = 1, category = "NGỮ PHÁP TRỌNG ĐIỂM", cardType = "Quy tắc 的",
@@ -1025,6 +1397,38 @@ class DataInitializer(
         // ==========================================
 
         // Bài 12: Câu so sánh "比"
+        val lesson12GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Câu so sánh hơn với chữ '比' (Bǐ)",
+            "formula": "A + 比 + B + Tính từ (+ 一点儿 / 多了 / 得多)",
+            "explanation": "Dùng để so sánh tính chất giữa A và B, trong đó A vượt trội hơn B. ĐIỀU CẤM KỴ: Tuyệt đối không được dùng phó từ mức độ như 很, 非常, 真 trước tính từ sau B!",
+            "examples": [
+              {
+                "hanzi": "他比我高一点儿。",
+                "pinyinOriginal": "Tā bǐ wǒ gāo yìdiǎnr.",
+                "pinyinActual": "Tā bǐ wǒ gāo yìdiǎnr.",
+                "meaning": "Anh ấy cao hơn tôi một chút.",
+                "tip": null,
+                "warning": "❌ SAI NGHIÊM TRỌNG: '他比我很高'. Tuyệt đối không thêm 很 vào câu chữ 比!",
+                "audioText": "他比我高一点儿。"
+              },
+              {
+                "hanzi": "今天比昨天冷得多。",
+                "pinyinOriginal": "Jīntiān bǐ zuótiān lěng de duō.",
+                "pinyinActual": "Jīntiān bǐ zuótiān lěng de duō.",
+                "meaning": "Hôm nay lạnh hơn hôm qua rất nhiều.",
+                "tip": "Để diễn tả 'hơn nhiều', thêm '得多' hoặc '多了' vào cuối câu.",
+                "warning": null,
+                "audioText": "今天比昨天冷得多。"
+              }
+            ],
+            "examTip": "Bẫy ngữ pháp số 1 trong HSK 3: Đề thi thường cố tình chèn chữ '很' vào câu so sánh để bẫy thí sinh!"
+          }
+        ]
+        """.trimIndent()
+
         val lesson12 = Lesson(
             id = "lesson_hsk3_compare_bi",
             category = "NGỮ PHÁP TRỌNG ĐIỂM",
@@ -1040,7 +1444,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 2,
             stage = "GRAMMAR",
-            orderIndex = 12
+            orderIndex = 12,
+            grammarStructuresJson = lesson12GrammarJson
         )
         val slide12_1 = LessonSlide(
             lesson = lesson12, slideIndex = 1, category = "NGỮ PHÁP TRỌNG ĐIỂM", cardType = "So sánh hơn",
@@ -1068,6 +1473,38 @@ class DataInitializer(
         lessonRepository.save(lesson12)
 
         // Bài 13: Câu chữ "把"
+        val lesson13GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Câu chữ '把' (Bǎ) — Xử lý và tác động đối tượng",
+            "formula": "Chủ ngữ + 把 + Tân ngữ + Động từ + Thành phần khác (Kết quả / 了 / 给我...)",
+            "explanation": "Dùng khi chủ ngữ thực hiện một hành động làm di chuyển, biến đổi trạng thái hoặc hoàn thành xong một đối tượng xác định. Động từ không được đứng đơn độc!",
+            "examples": [
+              {
+                "hanzi": "请把门关上。",
+                "pinyinOriginal": "Qǐng bǎ mén guān shang.",
+                "pinyinActual": "Qǐng bǎ mén guān shang.",
+                "meaning": "Làm ơn đóng cửa lại.",
+                "tip": null,
+                "warning": null,
+                "audioText": "请把门关上。"
+              },
+              {
+                "hanzi": "我已经把作业写完了。",
+                "pinyinOriginal": "Wǒ yǐjīng bǎ zuòyè xiě wán le.",
+                "pinyinActual": "Wǒ yǐjīng bǎ zuòyè xiě wán le.",
+                "meaning": "Tôi đã viết xong bài tập về nhà rồi.",
+                "tip": "Động từ '写' đi kèm bổ ngữ kết quả '完' và trợ từ '了'.",
+                "warning": "Không được nói '我把作业写' (thiếu thành phần bổ trợ kết quả).",
+                "audioText": "我已经把作业写完了。"
+              }
+            ],
+            "examTip": "Điểm ngữ pháp xuất hiện nhiều nhất trong phần Sắp xếp câu HSK 3: Luôn đưa tân ngữ lên sau chữ 把 rồi mới đến động từ!"
+          }
+        ]
+        """.trimIndent()
+
         val lesson13 = Lesson(
             id = "lesson_hsk3_ba_sentence",
             category = "NGỮ PHÁP TRỌNG ĐIỂM",
@@ -1083,7 +1520,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 2,
             stage = "GRAMMAR",
-            orderIndex = 13
+            orderIndex = 13,
+            grammarStructuresJson = lesson13GrammarJson
         )
         val slide13_1 = LessonSlide(
             lesson = lesson13, slideIndex = 1, category = "NGỮ PHÁP TRỌNG ĐIỂM", cardType = "Câu chữ 把",
@@ -1199,6 +1637,74 @@ class DataInitializer(
         // ==========================================
         // NHÓM 5: HSK 5 (Cao cấp - Thương mại & Hợp đồng)
         // ==========================================
+        val lesson16GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Trợ từ kết cấu '所' (Suǒ) — Cái mà / Điều mà",
+            "formula": "Chủ ngữ + 所 + Động từ + 的 + Danh từ trung tâm",
+            "explanation": "Thường dùng trong văn viết trang trọng, đứng trước động từ để biến cụm động từ thành định ngữ làm rõ đặc tính cho danh từ phía sau.",
+            "examples": [
+              {
+                "hanzi": "这就是我们所面对的最大困难。",
+                "pinyinOriginal": "Zhè jiù shì wǒmen suǒ miànduì de zuì dà kùnnan.",
+                "pinyinActual": "Zhè jiù shì wǒmen suǒ miànduì de zuì dà kùnnan.",
+                "meaning": "Đây chính là khó khăn lớn nhất mà chúng ta đang phải đối mặt.",
+                "tip": "Cụm '所面对的' bổ nghĩa cho '困难'.",
+                "warning": null,
+                "audioText": "这就是我们所面对的最大困难。"
+              },
+              {
+                "hanzi": "大家所提出的建议都非常有价值。",
+                "pinyinOriginal": "Dàjiā suǒ tíchū de jiànyì dōu fēicháng yǒu jiàzhí.",
+                "pinyinActual": "Dàjiā suǒ tíchū de jiànyì dōu fēicháng yǒu jiàzhí.",
+                "meaning": "Những kiến nghị mà mọi người đưa ra đều vô cùng có giá trị.",
+                "tip": null,
+                "warning": null,
+                "audioText": "大家所提出的建议都非常有价值。"
+              }
+            ],
+            "examTip": "Bài đọc hiểu HSK 5: Cụm '所 + Động từ' luôn biểu thị đối tượng hoặc nội dung chịu tác động của hành động đó."
+          },
+          {
+            "structureOrder": 2,
+            "title": "Cặp liên từ lựa chọn '与其……不如……' — Thà... còn hơn...",
+            "formula": "与其 + Phương án A，不如 + Phương án B",
+            "explanation": "So sánh hai phương án và đưa ra quyết định thiên về phương án B vì có tính hợp lý và tối ưu hơn.",
+            "examples": [
+              {
+                "hanzi": "与其坐在家里抱怨，不如现在就行动。",
+                "pinyinOriginal": "Yǔqí zuò zài jiālǐ bàoyuàn, bùrú xiànzài jiù xíngdòng.",
+                "pinyinActual": "Yǔqí zuò zài jiālǐ bàoyuàn, bùrú xiànzài jiù xíngdòng.",
+                "meaning": "Thà bây giờ hành động ngay còn hơn ngồi ở nhà than vãn.",
+                "tip": null,
+                "warning": null,
+                "audioText": "与其坐在家里抱怨，不如现在就行动。"
+              }
+            ],
+            "examTip": "Điểm ngữ pháp kiểm tra thường xuyên trong bài thi Điền từ HSK 5. Phương án sau 不如 luôn là phương án được chọn."
+          },
+          {
+            "structureOrder": 3,
+            "title": "Phó từ truy vấn '究竟' (Jiūjìng) — Rốt cuộc / Cuối cùng thì",
+            "formula": "Chủ ngữ + 究竟 + Câu hỏi (Đại từ nghi vấn / Đại từ chọn lựa)？",
+            "explanation": "Dùng trong câu nghi vấn để tăng cường ngữ khí truy hỏi đến cùng bản chất sự việc. Tuyệt đối không dùng trong câu khẳng định.",
+            "examples": [
+              {
+                "hanzi": "你究竟想要什么样的结果？",
+                "pinyinOriginal": "Nǐ jiūjìng xiǎng yào shénmeyàng de jiéguǒ?",
+                "pinyinActual": "Nǐ jiūjìng xiǎng yào shénmeyàng de jiéguǒ?",
+                "meaning": "Rốt cuộc bạn muốn có một kết quả như thế nào?",
+                "tip": null,
+                "warning": "❌ SAI: '他究竟成功了'. Cấm dùng 究竟 trong câu trần thuật khẳng định!",
+                "audioText": "你究竟想要什么样的结果？"
+              }
+            ],
+            "examTip": "Nếu câu không có dấu hỏi hoặc không chứa đại từ nghi vấn (什么, 怎么, 谁, 还是), câu có '究竟' chắc chắn là câu sai ngữ pháp (病句)."
+          }
+        ]
+        """.trimIndent()
+
         val lesson16 = Lesson(
             id = "lesson_hsk5_business",
             category = "GIAO TIẾP THỰC TẾ",
@@ -1214,7 +1720,8 @@ class DataInitializer(
             isRecommended = true,
             totalSlides = 2,
             stage = "BUSINESS",
-            orderIndex = 16
+            orderIndex = 16,
+            grammarStructuresJson = lesson16GrammarJson
         )
         val slide16_1 = LessonSlide(
             lesson = lesson16, slideIndex = 1, category = "GIAO TIẾP THỰC TẾ", cardType = "Khái niệm",
@@ -1241,7 +1748,289 @@ class DataInitializer(
         lesson16.slides.addAll(listOf(slide16_1, slide16_2))
         lessonRepository.save(lesson16)
 
-        println(">>> Đã khởi tạo thành công 16 bài học chuẩn lộ trình HSK phân cấp (Cơ bản, HSK 1, HSK 2, HSK 3, HSK 5)!")
+        // ==========================================
+        // NHÓM 6: HSK 4 (TRUNG CẤP & CÂU PHỨC)
+        // ==========================================
+        val lesson17GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Câu bị động với chữ '被' (Bèi) — Bị / Được",
+            "formula": "Chủ ngữ (chịu tác động) + 被 (+ Tác nhân) + Động từ + Thành phần khác (了 / 掉 / 走...)",
+            "explanation": "Biểu thị chủ ngữ chịu sự tác động của hành động. Thường mang sắc thái không may mắn hoặc khách quan. Động từ bắt buộc phải có thành phần bổ trợ kết quả phía sau.",
+            "examples": [
+              {
+                "hanzi": "我的自行车被人偷走了。",
+                "pinyinOriginal": "Wǒ de zìxíngchē bèi rén tōu zǒu le.",
+                "pinyinActual": "Wǒ de zìxíngchē bèi rén tōu zǒu le.",
+                "meaning": "Xe đạp của tôi bị người ta trộm mất rồi.",
+                "tip": "Động từ '偷' đi kèm kết quả '走了'.",
+                "warning": "❌ SAI: '我的自行车被偷' (thiếu thành phần kết quả sau động từ).",
+                "audioText": "我的自行车被人偷走了。"
+              },
+              {
+                "hanzi": "蛋糕被弟弟吃光了。",
+                "pinyinOriginal": "Dàngāo bèi dìdi chī guāng le.",
+                "pinyinActual": "Dàngāo bèi dìdi chī guāng le.",
+                "meaning": "Bánh kem bị em trai ăn sạch rồi.",
+                "tip": null,
+                "warning": null,
+                "audioText": "蛋糕被弟弟吃光了。"
+              }
+            ],
+            "examTip": "HSK 4 Sắp xếp câu: Tác nhân gây ra hành động có thể được lược bỏ trong câu chữ 被 (Ví dụ: 蛋糕被吃光了), nhưng câu chữ 把 thì bắt buộc phải có tân ngữ!"
+          },
+          {
+            "structureOrder": 2,
+            "title": "Cặp liên từ tăng tiến '不仅……而且……' — Không những... mà còn...",
+            "formula": "Chủ ngữ + 不仅……，而且…… (+ 也 / 还)",
+            "explanation": "Dùng để liên kết hai phân câu biểu thị mức độ tăng tiến về tính chất hoặc hành động.",
+            "examples": [
+              {
+                "hanzi": "他不仅会汉语，而且说得非常流利。",
+                "pinyinOriginal": "Tā bùjǐn huì Hànyǔ, érqiě shuō de fēicháng liúlì.",
+                "pinyinActual": "Tā bùjǐn huì Hànyǔ, érqiě shuō de fēicháng liúlì.",
+                "meaning": "Anh ấy không những biết tiếng Trung mà còn nói rất lưu loát.",
+                "tip": null,
+                "warning": null,
+                "audioText": "他不仅会汉语，而且说得非常流利。"
+              }
+            ],
+            "examTip": "Bẫy vị trí chủ ngữ HSK 4: Cùng chủ ngữ -> CN đứng trước 不仅. Khác chủ ngữ -> 不仅 đứng trước Chủ ngữ 1 (不仅小李去了，而且小王也去了)."
+          }
+        ]
+        """.trimIndent()
+
+        val lesson17 = Lesson(
+            id = "lesson_hsk4_passive_bei",
+            category = "NGỮ PHÁP TRỌNG ĐIỂM",
+            categoryBgColor = "#FEF3C7",
+            categoryTextColor = "#D97706",
+            level = "HSK 4",
+            pinyinHanziTitle = "“被”字句与递进复句",
+            title = "Câu bị động '被' (Bèi) & Cặp liên từ '不仅……而且……'",
+            description = "Nắm vững bản chất câu bị động và mẫu câu tăng tiến ăn điểm cốt lõi trong đề thi HSK 4.",
+            durationMins = 5,
+            sparks = 35,
+            isCompleted = false,
+            isRecommended = true,
+            totalSlides = 2,
+            stage = "GRAMMAR",
+            orderIndex = 17,
+            grammarStructuresJson = lesson17GrammarJson
+        )
+        val slide17_1 = LessonSlide(
+            lesson = lesson17, slideIndex = 1, category = "NGỮ PHÁP TRỌNG ĐIỂM", cardType = "Câu bị động",
+            slideType = SlideType.CONCEPT,
+            subTitle = "S + 被 (+ Tác nhân) + V + Kết quả", title = "Công thức câu bị động chữ 被 chuẩn HSK 4",
+            pinyinVariants = mutableListOf("zìxíngchē", "bèi", "tōu", "zǒu", "le"),
+            hanziVariants = mutableListOf("自", "行", "车", "被", "偷", "走", "了"),
+            hanViet = "Tự hành xa bị thâu tẩu liễu (Xe đạp bị trộm mất rồi)",
+            meaning = "Chủ ngữ chịu ảnh hưởng trực tiếp của hành động do tác nhân gây ra.",
+            explanationText = "Đặc điểm câu chữ 被",
+            explanationContent = "1. Sau động từ bắt buộc phải có thành phần khác (kết quả, bổ ngữ xu hướng, 了).\n2. Nếu có phó từ phủ định (没, 不), phải đặt trước 被, tuyệt đối không đặt sau 被.",
+            boxColor = "#E06A3B"
+        )
+        val slide17_2 = LessonSlide(
+            lesson = lesson17, slideIndex = 2, category = "NGỮ PHÁP TRỌNG ĐIỂM", cardType = "Trắc nghiệm",
+            slideType = SlideType.QUIZ,
+            subTitle = "Luyện phản xạ câu chữ 被", title = "Tìm câu đúng ngữ pháp câu chữ 被",
+            question = "Câu nào sau đây ĐÚNG cấu trúc câu bị động chữ 被?",
+            options = mutableListOf(
+                "蛋糕被弟弟吃光了 (Dàngāo bèi dìdi chī guāng le)",
+                "蛋糕被弟弟吃 (thiếu thành phần kết quả)",
+                "弟弟蛋糕被吃了光",
+                "蛋糕弟弟吃了被"
+            ),
+            correctAnswerIndex = 0,
+            quizExplanation = "Động từ '吃' phải đi kèm kết quả '光' (sạch) và trợ từ '了'.",
+            boxColor = "#5538EE"
+        )
+        lesson17.slides.addAll(listOf(slide17_1, slide17_2))
+        lessonRepository.save(lesson17)
+
+        // Bài 18: HSK 4 - Nhấn mạnh 连...也/都...
+        val lesson18GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Cấu trúc nhấn mạnh '连……也/都……' — Ngay cả / Thậm chí... cũng...",
+            "formula": "连 + Đối tượng nhấn mạnh + 也 / 都 + Động từ (phủ định hoặc khẳng định)",
+            "explanation": "Đưa trường hợp nổi bật hoặc cực đoan nhất lên đầu câu nhằm nhấn mạnh tính chất hiển nhiên của sự việc.",
+            "examples": [
+              {
+                "hanzi": "这个问题太难了，连老师都不知道答案。",
+                "pinyinOriginal": "Zhè ge wèntí tài nán le, lián lǎoshī dōu bù zhīdào dá'àn.",
+                "pinyinActual": "Zhè ge wèntí tài nán le, lián lǎoshī dōu bù zhīdào dá'àn.",
+                "meaning": "Vấn đề này khó quá, ngay cả giáo viên cũng không biết câu trả lời.",
+                "tip": null,
+                "warning": null,
+                "audioText": "这个问题太难了，连老师都不知道答案。"
+              },
+              {
+                "hanzi": "他最近工作太忙，连饭都没时间吃。",
+                "pinyinOriginal": "Tā zuìjìn gōngzuò tài máng, lián fàn dōu méi shíjiān chī.",
+                "pinyinActual": "Tā zuìjìn gōngzuò tài máng, lián fàn dōu méi shíjiān chī.",
+                "meaning": "Dạo này anh ấy bận quá, ngay cả cơm cũng không có thời gian ăn.",
+                "tip": null,
+                "warning": null,
+                "audioText": "他最近工作太忙，连饭都没时间吃。"
+              }
+            ],
+            "examTip": "Thường xuyên xuất hiện trong bài thi Viết HSK 4 để viết câu miêu tả tranh có mức độ cao hoặc ngạc nhiên."
+          }
+        ]
+        """.trimIndent()
+
+        val lesson18 = Lesson(
+            id = "lesson_hsk4_emphasis_lian",
+            category = "NGỮ PHÁP TRỌNG ĐIỂM",
+            categoryBgColor = "#FEF3C7",
+            categoryTextColor = "#D97706",
+            level = "HSK 4",
+            pinyinHanziTitle = "“连……也/都……”句式",
+            title = "Cấu trúc nhấn mạnh '连……也/都……' (Ngay cả... cũng...)",
+            description = "Học cách sử dụng cấu trúc nhấn mạnh cực hạn kinh điển của ngữ pháp HSK 4.",
+            durationMins = 5,
+            sparks = 35,
+            isCompleted = false,
+            isRecommended = true,
+            totalSlides = 2,
+            stage = "GRAMMAR",
+            orderIndex = 18,
+            grammarStructuresJson = lesson18GrammarJson
+        )
+        val slide18_1 = LessonSlide(
+            lesson = lesson18, slideIndex = 1, category = "NGỮ PHÁP TRỌNG ĐIỂM", cardType = "Cấu trúc 连",
+            slideType = SlideType.CONCEPT,
+            subTitle = "连 + Tân ngữ + 也/都 + V", title = "Bản chất nhấn mạnh cực đoan",
+            pinyinVariants = mutableListOf("lián", "lǎoshī", "dōu", "bù", "zhīdào"),
+            hanziVariants = mutableListOf("连", "老", "师", "都", "不", "知", "道"),
+            hanViet = "Liên lão sư đô bất tri đạo (Ngay cả thầy giáo cũng không biết)",
+            meaning = "Nhấn mạnh trường hợp bất ngờ hoặc điển hình nhất nhằm khẳng định mức độ của vấn đề.",
+            explanationText = "Cách ghép câu 连……都/也……",
+            explanationContent = "Ngay cả đứa trẻ 3 tuổi cũng hiểu:\n连三岁的小孩儿都懂 (Lián sān suì de xiǎoháir dōu dǒng).",
+            boxColor = "#4338CA"
+        )
+        val slide18_2 = LessonSlide(
+            lesson = lesson18, slideIndex = 2, category = "NGỮ PHÁP TRỌNG ĐIỂM", cardType = "Trắc nghiệm",
+            slideType = SlideType.QUIZ,
+            subTitle = "Trắc nghiệm ngữ pháp 连", title = "Chọn vị trí điền chữ '连'",
+            question = "Trong câu '(A) 三岁的小孩儿 (B) 都 (C) 懂得这个道理 (D)', chữ '连' điền vào vị trí nào?",
+            options = mutableListOf("Vị trí (A)", "Vị trí (B)", "Vị trí (C)", "Vị trí (D)"),
+            correctAnswerIndex = 0,
+            quizExplanation = "Chữ 连 đứng trước đối tượng nhấn mạnh: 连三岁的小孩儿都懂得...",
+            boxColor = "#5538EE"
+        )
+        lesson18.slides.addAll(listOf(slide18_1, slide18_2))
+        lessonRepository.save(lesson18)
+
+        // ==========================================
+        // NHÓM 7: HSK 6 (BẬC CAO NHẤT - HỌC THUẬT & VĂN NGÔN)
+        // ==========================================
+        val lesson19GrammarJson = """
+        [
+          {
+            "structureOrder": 1,
+            "title": "Cấu trúc hành chính '鉴于……' (Jiànyú) — Xét thấy / Căn cứ vào",
+            "formula": "鉴于 + Bối cảnh thực tế / Nguyên nhân khách quan，Chủ ngữ + Quyết định / Biện pháp",
+            "explanation": "Dùng trong văn kiện chính thức, báo chí và bài viết học thuật để nêu căn cứ dẫn dắt ra giải pháp hoặc quyết định quan trọng.",
+            "examples": [
+              {
+                "hanzi": "鉴于目前严峻的市场形势，公司决定调整投资战略。",
+                "pinyinOriginal": "Jiànyú mùqián yánjùn de shìchǎng xíngshì, gōngsī juédìng tiáozhěng tóuzī zhànlüè.",
+                "pinyinActual": "Jiànyú mùqián yánjùn de shìchǎng xíngshì, gōngsī juédìng tiáozhěng tóuzī zhànlüè.",
+                "meaning": "Xét thấy tình hình thị trường gay gắt hiện tại, công ty quyết định điều chỉnh chiến lược đầu tư.",
+                "tip": "'鉴于' luôn đặt ở đầu câu hoặc đầu phân câu.",
+                "warning": null,
+                "audioText": "鉴于目前严峻的市场形势，公司决定调整投资战略。"
+              }
+            ],
+            "examTip": "Bài đọc hiểu Nghị luận HSK 6: Nội dung theo sau '鉴于' chính là tiền đề then chốt để tìm ý chính của toàn bài."
+          },
+          {
+            "structureOrder": 2,
+            "title": "Cặp liên từ nhượng bộ phản biện '固然……，然而/但……' — Dẫu rằng... tuy nhiên...",
+            "formula": "Chủ ngữ + 固然……，然而 / 但是 + Luận điểm trọng tâm",
+            "explanation": "Thừa nhận tính chân thực hoặc giá trị của một mặt trước, sau đó chuyển hướng nhấn mạnh vào điểm mấu chốt đối lập.",
+            "examples": [
+              {
+                "hanzi": "追求速度固然重要，然而保证质量才是立足之本。",
+                "pinyinOriginal": "Zhuīqiú sùdù gùrán zhòngyào, rán'ér bǎozhèng zhìliàng cái shì lìzú zhī běn.",
+                "pinyinActual": "Zhuīqiú sùdù gùrán zhòngyào, rán'ér bǎozhèng zhìliàng cái shì lìzú zhī běn.",
+                "meaning": "Theo đuổi tốc độ dẫu rằng quan trọng, tuy nhiên bảo đảm chất lượng mới là gốc rễ để đứng vững.",
+                "tip": null,
+                "warning": null,
+                "audioText": "追求速度固然重要，然而保证质量才是立足之本。"
+              }
+            ],
+            "examTip": "Cấu trúc vàng ghi điểm tuyệt đối trong bài thi Viết tóm tắt (缩写) 400 chữ của HSK 6."
+          },
+          {
+            "structureOrder": 3,
+            "title": "Phó từ tế nhị trong văn viết '未免' (Wèimiǎn) — E rằng khó tránh / Có phần quá...",
+            "formula": "未免 + 太 / 过分 / (tính từ tiêu cực)",
+            "explanation": "Dùng để biểu thị sự phê bình hoặc đánh giá không tán thành nhưng với giọng điệu khách quan, lịch thiệp và chừng mực.",
+            "examples": [
+              {
+                "hanzi": "仅仅因为一次失误就全盘否定他，未免有失公允。",
+                "pinyinOriginal": "Jǐnjǐn yīnwèi yí cì shīwù jiù quánpán fǒudìng tā, wèimiǎn yǒushī gōngyǔn.",
+                "pinyinActual": "Jǐnjǐn yīnwèi yí cì shīwù jiù quánpán fǒudìng tā, wèimiǎn yǒushī gōngyǔn.",
+                "meaning": "Chỉ vì một lần sai sót mà phủ nhận hoàn toàn anh ấy, e rằng có phần thiếu công bằng.",
+                "tip": null,
+                "warning": null,
+                "audioText": "仅仅因为一次失误就全盘否定他，未免有失公允。"
+              }
+            ],
+            "examTip": "Điểm ngữ pháp nhận diện câu sai (病句) kinh điển trong HSK 6: '未免' không kết hợp với từ phủ định '不'!"
+          }
+        ]
+        """.trimIndent()
+
+        val lesson19 = Lesson(
+            id = "lesson_hsk6_academic_grammar",
+            category = "NGỮ PHÁP TRỌNG ĐIỂM",
+            categoryBgColor = "#FFE4E6",
+            categoryTextColor = "#E11D48",
+            level = "HSK 6",
+            pinyinHanziTitle = "高级书面语语法体系 (HSK 6)",
+            title = "Ngữ pháp văn phong học thuật & Luận văn HSK 6",
+            description = "Làm chủ các cấu trúc chính luận, nhượng bộ phản biện và phó từ tinh tế chuẩn mực bậc cao nhất HSK 6.",
+            durationMins = 6,
+            sparks = 45,
+            isCompleted = false,
+            isRecommended = true,
+            totalSlides = 2,
+            stage = "GRAMMAR",
+            orderIndex = 19,
+            grammarStructuresJson = lesson19GrammarJson
+        )
+        val slide19_1 = LessonSlide(
+            lesson = lesson19, slideIndex = 1, category = "NGỮ PHÁP TRỌNG ĐIỂM", cardType = "Chính luận",
+            slideType = SlideType.CONCEPT,
+            subTitle = "鉴于…… & 固然……然而……", title = "Nghệ thuật lập luận trong bài thi HSK 6",
+            pinyinVariants = mutableListOf("jiànyú", "gùrán", "rán'ér", "wèimiǎn"),
+            hanziVariants = mutableListOf("鉴于", "固然", "然而", "未免"),
+            hanViet = "Giám vu · Cố nhiên · Nhiên nhi · Vị miễn",
+            meaning = "Nắm bắt các mắt xích logic cao cấp giúp bài viết đạt band điểm tuyệt đối trong kỳ thi HSK 6.",
+            explanationText = "Phân tích cú pháp học thuật",
+            explanationContent = "鉴于 (Jiànyú): Nêu bối cảnh căn cứ.\n固然...然而...: Thừa nhận mặt thuận rồi phản biện mặt nghịch.\n未免 (Wèimiǎn): Đánh giá chừng mực trong phê bình.",
+            boxColor = "#9333EA"
+        )
+        val slide19_2 = LessonSlide(
+            lesson = lesson19, slideIndex = 2, category = "NGỮ PHÁP TRỌNG ĐIỂM", cardType = "Trắc nghiệm HSK 6",
+            slideType = SlideType.QUIZ,
+            subTitle = "Nhận diện văn phong HSK 6", title = "Từ nào có nghĩa 'Xét thấy / Căn cứ vào'?",
+            question = "Trong văn bản chính thức HSK 6, từ nào dùng để nêu căn cứ bối cảnh khách quan dẫn đến quyết định?",
+            options = mutableListOf("鉴于 (Jiànyú)", "基于 (Jīyú)", "关于 (Guānyú)", "对于 (Duìyú)"),
+            correctAnswerIndex = 0,
+            quizExplanation = "鉴于 (jiànyú) dùng để nêu tiền đề, nguyên nhân khách quan để đưa ra quyết định hoặc biện pháp.",
+            boxColor = "#5538EE"
+        )
+        lesson19.slides.addAll(listOf(slide19_1, slide19_2))
+        lessonRepository.save(lesson19)
+
+        println(">>> Đã khởi tạo thành công 19 bài học chuẩn toàn diện lộ trình HSK 1 đến HSK 6!")
     }
 
     private fun initDailyWisdoms() {

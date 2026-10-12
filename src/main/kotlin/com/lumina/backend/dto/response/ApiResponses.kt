@@ -121,6 +121,7 @@ data class LessonResponse(
     val description: String,
     val durationMins: Int,
     val sparks: Int,
+    val stars: Int = 0,
     val isCompleted: Boolean,
     val totalSlides: Int,
     val stage: String = "FOUNDATION",
@@ -130,6 +131,7 @@ data class LessonResponse(
     val dialogueContext: String = "",
     val dialogues: List<DialogueLineResponse> = emptyList(),
     val coreVocabularies: List<LessonVocabResponse> = emptyList(),
+    val needsReview: Boolean = false,
     val slides: List<SlideResponse>
 )
 
@@ -179,3 +181,86 @@ data class HskLevelResponse(
     val scoreRange: String? = null,
     val count: Int = 0
 )
+
+data class ExamQuestionResponse(
+    val id: Int,
+    val typeTitle: String,
+    val question: String,
+    val pinyinHint: String? = null,
+    val options: List<String>,
+    val correctIndex: Int,
+    val explanation: String
+)
+
+data class ChestRewardResponse(
+    val unitNumber: Int,
+    val sparksEarned: Int,
+    val expEarned: Int,
+    val message: String
+)
+
+data class JourneyUnitResponse(
+    val unitNumber: Int,
+    val title: String,
+    val description: String,
+    val icon: String,
+    val gradientStart: String = "#4F46E5",
+    val gradientEnd: String = "#6366F1"
+)
+
+data class QuickReviewQuestionResponse(
+    val id: Int,
+    val hanzi: String,
+    val pinyin: String,
+    val question: String,
+    val options: List<String>,
+    val correctIndex: Int
+)
+
+data class ReviewResultResponse(
+    val lessonId: String,
+    val sparksBonus: Int = 15,
+    val newStars: Int = 3,
+    val message: String = "Hàn gắn trạm ôn tập thành công!"
+)
+
+data class HeartStatusResponse(
+    val currentHearts: Int = 5,
+    val maxHearts: Int = 5,
+    val nextRefillMinutes: Int = 0,
+    val sparksRefillCost: Int = 50,
+    val message: String = ""
+)
+
+data class LeaderboardUserResponse(
+    val rank: Int,
+    val userId: String,
+    val fullName: String,
+    val avatarUrl: String? = null,
+    val weeklySparks: Int,
+    val isCurrentUser: Boolean = false
+)
+
+data class LeaderboardResponse(
+    val leagueTier: String = "VÀNG (GOLD)",
+    val daysRemaining: Int = 3,
+    val userRank: Int = 1,
+    val users: List<LeaderboardUserResponse> = emptyList()
+)
+
+data class SkillRadarScoreResponse(
+    val phonetics: Int = 85,
+    val vocabulary: Int = 90,
+    val grammar: Int = 78,
+    val dialogue: Int = 82,
+    val accuracy: Int = 88
+)
+
+data class AnalyticsSummaryResponse(
+    val totalLessonsCompleted: Int,
+    val totalStars: Int,
+    val masteredVocabsCount: Int,
+    val accuracyPercentage: Int,
+    val radarScores: SkillRadarScoreResponse
+)
+

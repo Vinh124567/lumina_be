@@ -73,4 +73,12 @@ class VocabularyController(
         val updated = vocabularyService.updateSrsRating(id, request)
         return ResponseEntity.ok(ApiResponse.success(updated, "Cập nhật chu kỳ SRS thành công"))
     }
+
+    @PostMapping("/sync")
+    fun syncVocabularies(
+        @RequestParam(defaultValue = "false") force: Boolean
+    ): ResponseEntity<ApiResponse<Map<String, Any>>> {
+        val count = vocabularyService.syncVocabulariesFromResource(force)
+        return ResponseEntity.ok(ApiResponse.success(mapOf("count" to count), "Đồng bộ $count từ vựng vào Database thành công"))
+    }
 }

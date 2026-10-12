@@ -35,8 +35,14 @@ class Lesson(
     @Column(nullable = false)
     var sparks: Int = 0,
 
+    @Column(nullable = false, columnDefinition = "integer default 0")
+    var stars: Int = 0,
+
     @Column(nullable = false)
     var isCompleted: Boolean = false,
+
+    @Column(nullable = false, columnDefinition = "boolean default false")
+    var needsReview: Boolean = false,
 
     @Column(nullable = false)
     var isRecommended: Boolean = true,

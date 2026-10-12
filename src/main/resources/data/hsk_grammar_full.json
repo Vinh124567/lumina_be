@@ -1,0 +1,1460 @@
+[
+  {
+    "id": "hsk1_01_svo",
+    "hskLevel": "HSK 1",
+    "structureOrder": 1,
+    "title": "Trật tự từ cơ bản trong câu tiếng Trung (S + V + O)",
+    "formula": "Chủ ngữ (S) + Trạng ngữ (Thời gian/Nơi chốn) + Động từ (V) + Tân ngữ (O)",
+    "explanation": "Khác với tiếng Việt, trạng ngữ chỉ thời gian và nơi chốn trong tiếng Trung BẮT BUỘC phải đứng trước động từ chính hoặc ngay đầu câu trước chủ ngữ.",
+    "examTip": "HSK 1 Sắp xếp câu: Luôn tìm Chủ ngữ và Thời gian đặt lên trước, Động từ và Tân ngữ xếp sau cùng.",
+    "examples": [
+      {
+        "hanzi": "我明天去学校。",
+        "pinyinOriginal": "Wǒ míngtiān qù xuéxiào.",
+        "pinyinActual": "Wǒ míngtiān qù xuéxiào.",
+        "meaning": "Ngày mai tôi đi đến trường học.",
+        "tip": "Thời gian '明天' đứng trước động từ '去'.",
+        "warning": "❌ SAI: '我去学校明天'. Tuyệt đối không để thời gian ở cuối câu!",
+        "audioText": "我明天去学校。"
+      },
+      {
+        "hanzi": "他在家吃苹果。",
+        "pinyinOriginal": "Tā zài jiā chī píngguǒ.",
+        "pinyinActual": "Tā zài jiā chī píngguǒ.",
+        "meaning": "Anh ấy ăn táo ở nhà.",
+        "tip": "Nơi chốn '在家' đứng trước hành động '吃'.",
+        "warning": null,
+        "audioText": "他在家吃苹果。"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_02_shi",
+    "hskLevel": "HSK 1",
+    "structureOrder": 2,
+    "title": "Câu chữ '是' (Shì) — Là / Khẳng định & Phủ định '不是'",
+    "formula": "Khẳng định: A + 是 + B | Phủ định: A + 不是 + B",
+    "explanation": "Dùng để biểu thị sự phán đoán hoặc khẳng định bản chất, nghề nghiệp, quốc tịch. '不是' (bú shì) có biến điệu thanh 2.",
+    "examTip": "Khi '是' dùng để giới thiệu bản thân hoặc đồ vật trong phần Nghe HSK 1, câu trả lời thường đi kèm danh từ chỉ người hoặc vật.",
+    "examples": [
+      {
+        "hanzi": "我是越南人，他不是中国人。",
+        "pinyinOriginal": "Wǒ shì Yuènán rén, tā bú shì Zhōngguó rén.",
+        "pinyinActual": "Wǒ shì Yuènán rén, tā bú shì Zhōngguó rén.",
+        "meaning": "Tôi là người Việt Nam, anh ấy không phải người Trung Quốc.",
+        "tip": null,
+        "warning": null,
+        "audioText": "我是越南人，他不是中国人。"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_03_you",
+    "hskLevel": "HSK 1",
+    "structureOrder": 3,
+    "title": "Câu chữ '有' (Yǒu) — Biểu thị Sở hữu & Nơi chốn",
+    "formula": "Sở hữu: A + 有 + B | Phủ định: A + 没有 + B (CẤM DÙNG 不有)",
+    "explanation": "Biểu thị ai đó có cái gì hoặc nơi nào đó có sự vật gì. Dạng phủ định của '有' DUY NHẤT chỉ dùng '没', tuyệt đối không dùng '不'.",
+    "examTip": "Lỗi kinh điển HSK 1: Đề thi thường cố tình gài chữ '不有' để kiểm tra nhận diện câu sai.",
+    "examples": [
+      {
+        "hanzi": "我有一只猫，我没有狗。",
+        "pinyinOriginal": "Wǒ yǒu yì zhī māo, wǒ méiyǒu gǒu.",
+        "pinyinActual": "Wǒ yǒu yì zhī māo, wǒ méiyǒu gǒu.",
+        "meaning": "Tôi có một con mèo, tôi không có chó.",
+        "tip": null,
+        "warning": "❌ SAI: '我不有狗'. Phải dùng 没有!",
+        "audioText": "我有一只猫，我没有狗。"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_04_shenme",
+    "hskLevel": "HSK 1",
+    "structureOrder": 4,
+    "title": "Đại từ nghi vấn '什么' (Shénme) — Cái gì / Gì",
+    "formula": "Chủ ngữ + Động từ + 什么 (+ Danh từ)？",
+    "explanation": "Dùng để hỏi về sự vật, đồ vật hoặc tên gọi. Trong tiếng Trung, đại từ nghi vấn giữ nguyên vị trí ngữ pháp của thành phần được hỏi.",
+    "examTip": "Hỏi 'Bạn tên là gì' luôn là 你叫什么名字？(Nǐ jiào shénme míngzi?).",
+    "examples": [
+      {
+        "hanzi": "你叫什么名字？",
+        "pinyinOriginal": "Nǐ jiào shénme míngzi?",
+        "pinyinActual": "Nǐ jiào shénme míngzi?",
+        "meaning": "Bạn tên là gì?",
+        "tip": null,
+        "warning": null,
+        "audioText": "你叫什么名字？"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_05_shei",
+    "hskLevel": "HSK 1",
+    "structureOrder": 5,
+    "title": "Đại từ nghi vấn '谁' (Shéi / Shuí) — Ai",
+    "formula": "谁 + Động từ + Tân ngữ？ HOẶC Tân ngữ + 是 + 谁？",
+    "explanation": "Dùng để hỏi về người hoặc danh tính của một cá nhân.",
+    "examTip": "Trong phần Nghe HSK 1, câu hỏi '他是谁？' thường đối chiếu với câu trả lời giới thiệu quan hệ như 老师, 爸爸, 朋友.",
+    "examples": [
+      {
+        "hanzi": "他是谁？他是我汉语老师。",
+        "pinyinOriginal": "Tā shì shéi? Tā shì wǒ Hànyǔ lǎoshī.",
+        "pinyinActual": "Tā shì shéi? Tā shì wǒ Hànyǔ lǎoshī.",
+        "meaning": "Anh ấy là ai? Anh ấy là thầy giáo tiếng Trung của tôi.",
+        "tip": null,
+        "warning": null,
+        "audioText": "他是谁？他是我汉语老师。"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_06_nar",
+    "hskLevel": "HSK 1",
+    "structureOrder": 6,
+    "title": "Đại từ nghi vấn nơi chốn '哪儿 / 哪里' — Ở đâu",
+    "formula": "Chủ ngữ + 在 + 哪儿 / 哪里？",
+    "explanation": "Dùng để hỏi vị trí, địa điểm của người hoặc đồ vật.",
+    "examTip": "Phân biệt '哪' (Nǎ - Nào: 哪国人) với '哪儿' (Nǎr - Ở đâu: 在哪儿).",
+    "examples": [
+      {
+        "hanzi": "你的电脑在哪儿？在桌子上。",
+        "pinyinOriginal": "Nǐ de diànnǎo zài nǎr? Zài zhuōzi shang.",
+        "pinyinActual": "Nǐ de diànnǎo zài nǎr? Zài zhuōzi shang.",
+        "meaning": "Máy tính của bạn ở đâu? Ở trên bàn.",
+        "tip": null,
+        "warning": null,
+        "audioText": "你的电脑在哪儿？在桌子上。"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_07_ji_duoshao",
+    "hskLevel": "HSK 1",
+    "structureOrder": 7,
+    "title": "Đại từ số lượng '几' (Mấy < 10) vs '多少' (Bao nhiêu > 10)",
+    "formula": "几 + Lượng từ + Danh từ | 多少 (+ Lượng từ) + Danh từ",
+    "explanation": "'几' bắt buộc phải có lượng từ và dùng cho số lượng ước lượng dưới 10 (mấy tuổi, mấy giờ). '多少' dùng cho số lượng lớn, không bắt buộc lượng từ.",
+    "examTip": "Hỏi tuổi trẻ em: 你几岁？. Hỏi tuổi người lớn: 你多大？. Hỏi giá tiền: 多少钱？.",
+    "examples": [
+      {
+        "hanzi": "你家有几口人？",
+        "pinyinOriginal": "Nǐ jiā yǒu jǐ kǒu rén?",
+        "pinyinActual": "Nǐ jiā yǒu jǐ kǒu rén?",
+        "meaning": "Nhà bạn có mấy người?",
+        "tip": null,
+        "warning": null,
+        "audioText": "你家有几口人？"
+      },
+      {
+        "hanzi": "这个苹果多少钱？",
+        "pinyinOriginal": "Zhè ge píngguǒ duōshao qián?",
+        "pinyinActual": "Zhè ge píngguǒ duōshao qián?",
+        "meaning": "Quả táo này bao nhiêu tiền?",
+        "tip": null,
+        "warning": null,
+        "audioText": "这个苹果多少钱？"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_08_ma",
+    "hskLevel": "HSK 1",
+    "structureOrder": 8,
+    "title": "Trợ từ nghi vấn '吗' (Ma) — Đặt cuối câu hỏi Có/Không",
+    "formula": "Câu trần thuật + 吗？",
+    "explanation": "Biến một câu khẳng định thành câu hỏi Có/Không một cách nhanh chóng mà không cần thay đổi trật tự từ.",
+    "examTip": "Nếu trong câu đã có đại từ nghi vấn (什么, 谁, 哪儿, 几), tuyệt đối KHÔNG được thêm chữ '吗' ở cuối!",
+    "examples": [
+      {
+        "hanzi": "你想喝茶吗？",
+        "pinyinOriginal": "Nǐ xiǎng hē chá ma?",
+        "pinyinActual": "Nǐ xiǎng hē chá ma?",
+        "meaning": "Bạn muốn uống trà không?",
+        "tip": null,
+        "warning": "❌ SAI: '你是谁吗？'. Câu đã có 谁 thì cấm dùng 吗!",
+        "audioText": "你想喝茶吗？"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_09_ne",
+    "hskLevel": "HSK 1",
+    "structureOrder": 9,
+    "title": "Trợ từ ngữ khí '呢' (Ne) — Hỏi lửng hoặc hành động tiếp diễn",
+    "formula": "Danh từ/Đại từ + 呢？ (Còn... thì sao?) | (在) + Động từ + 呢 (Đang làm gì)",
+    "explanation": "Dùng để hỏi lửng lặp lại câu hỏi trước đó mà không cần nhắc lại toàn bộ câu.",
+    "examTip": "Mẫu câu đàm thoại HSK 1: 我很好，你呢？ (Tôi rất khỏe, còn bạn thì sao?).",
+    "examples": [
+      {
+        "hanzi": "我喜欢吃米饭，你呢？",
+        "pinyinOriginal": "Wǒ xǐhuan chī mǐfàn, nǐ ne?",
+        "pinyinActual": "Wǒ xǐhuan chī mǐfàn, nǐ ne?",
+        "meaning": "Tôi thích ăn cơm, còn bạn thì sao?",
+        "tip": null,
+        "warning": null,
+        "audioText": "我喜欢吃米饭，你呢？"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_10_ba",
+    "hskLevel": "HSK 1",
+    "structureOrder": 10,
+    "title": "Trợ từ ngữ khí '吧' (Ba) — Đề nghị, rủ rê & Phỏng đoán",
+    "formula": "Lời đề nghị / Phán đoán + 吧。",
+    "explanation": "Làm mềm ngữ khí, biến câu thành lời rủ rê ('đi nhé', 'nhé') hoặc phỏng đoán điều người nói đã nắm chắc 80%.",
+    "examTip": "Khi rủ rê 'Chúng ta đi thôi' luôn dùng: 我们走吧 (Wǒmen zǒu ba).",
+    "examples": [
+      {
+        "hanzi": "今天天气很好，我们去公园吧！",
+        "pinyinOriginal": "Jīntiān tiānqì hěn hǎo, wǒmen qù gōngyuán ba!",
+        "pinyinActual": "Jīntiān tiānqì hěn hǎo, wǒmen qù gōngyuán ba!",
+        "meaning": "Hôm nay thời tiết đẹp lắm, chúng mình đi công viên nhé!",
+        "tip": null,
+        "warning": null,
+        "audioText": "今天天气很好，我们去公园吧！"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_11_tone3_shift",
+    "hskLevel": "HSK 1",
+    "structureOrder": 11,
+    "title": "Quy tắc biến điệu hai thanh 3 (3 + 3 ➔ 2 + 3)",
+    "formula": "Thanh 3 (v) + Thanh 3 (v) ➔ Thanh 2 (/) + Thanh 3 (v)",
+    "explanation": "Khi hai âm tiết mang thanh 3 đứng liền kề nhau, âm tiết thứ nhất bắt buộc biến âm đọc thành thanh 2 để đảm bảo luồng hơi tự nhiên.",
+    "examTip": "Kinh điển: 你 (nǐ) + 好 (hǎo) ➔ Đọc là Ní hǎo. Chữ viết Pinyin vẫn giữ nguyên dấu thanh 3 gốc.",
+    "examples": [
+      {
+        "hanzi": "你好！我很想你。",
+        "pinyinOriginal": "Nǐ hǎo! Wǒ hěn xiǎng nǐ.",
+        "pinyinActual": "Ní hǎo! Wǒ hén xiǎng nǐ.",
+        "meaning": "Xin chào! Tôi rất nhớ bạn.",
+        "tip": null,
+        "warning": null,
+        "audioText": "你好！我很想你。"
+      }
+    ]
+  },
+  {
+    "id": "hsk1_12_yi_bu_shift",
+    "hskLevel": "HSK 1",
+    "structureOrder": 12,
+    "title": "Quy tắc biến điệu của chữ '一' (Yī) và '不' (Bù)",
+    "formula": "Đứng trước thanh 4: Đọc thành thanh 2 ('yí', 'bú') | Đứng trước thanh 1,2,3: 'yī' đọc thành thanh 4 'yì'",
+    "explanation": "Chữ 不 (gốc mang thanh 4) khi đứng trước âm tiết mang thanh 4 khác bắt buộc đọc thành thanh 2 (bú shì, bú kèqi).",
+    "examTip": "Ví dụ ăn điểm: 不是 (bú shì), 不要 (bú yào), 一个 (yí gè).",
+    "examples": [
+      {
+        "hanzi": "不客气，一个人。",
+        "pinyinOriginal": "Bù kèqi, yī gè rén.",
+        "pinyinActual": "Bú kèqi, yí gè rén.",
+        "meaning": "Không có gì, một người.",
+        "tip": null,
+        "warning": null,
+        "audioText": "不客气，一个人。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_01_de_possession",
+    "hskLevel": "HSK 2",
+    "structureOrder": 1,
+    "title": "Trợ từ kết cấu '的' (De) — Định ngữ và Sở hữu",
+    "formula": "Định ngữ (Tính từ / Đại từ / Danh từ) + 的 + Danh từ trung tâm",
+    "explanation": "Thành phần miêu tả hoặc chủ sở hữu luôn đứng TRƯỚC chữ '的'. Danh từ chính được bổ nghĩa luôn đứng SAU chữ '的'.",
+    "examTip": "HSK 2 Sắp xếp câu: Cứ thấy '的' thì danh từ theo sau nó luôn là đối tượng chính của câu!",
+    "examples": [
+      {
+        "hanzi": "这是我的新手机，漂亮的衣服。",
+        "pinyinOriginal": "Zhè shì wǒ de xīn shǒujī, piàoliang de yīfu.",
+        "pinyinActual": "Zhè shì wǒ de xīn shǒujī, piàoliang de yīfu.",
+        "meaning": "Đây là điện thoại mới của tôi, quần áo đẹp.",
+        "tip": null,
+        "warning": null,
+        "audioText": "这是我的新手机，漂亮的衣服。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_02_le_action",
+    "hskLevel": "HSK 2",
+    "structureOrder": 2,
+    "title": "Trợ từ động thái '了' (Le) — Hành động đã hoàn thành",
+    "formula": "Chủ ngữ + Động từ + 了 + (Tân ngữ)",
+    "explanation": "Đứng ngay sau động từ để biểu thị hành động đã xảy ra và hoàn tất.",
+    "examTip": "Phủ định của động từ có '了' phải dùng '没' hoặc '没有', và BẮT BUỘC bỏ '了' đi!",
+    "examples": [
+      {
+        "hanzi": "我买了三本书，他没买。",
+        "pinyinOriginal": "Wǒ mǎi le sān běn shū, tā méi mǎi.",
+        "pinyinActual": "Wǒ mǎi le sān běn shū, tā méi mǎi.",
+        "meaning": "Tôi đã mua ba cuốn sách, anh ấy chưa mua.",
+        "tip": null,
+        "warning": "❌ SAI: '他没买了'. Đã có 没 thì tuyệt đối bỏ 了!",
+        "audioText": "我买了三本书，他没买。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_03_le_change",
+    "hskLevel": "HSK 2",
+    "structureOrder": 3,
+    "title": "Trợ từ ngữ khí '了' (Le) — Biểu thị sự thay đổi trạng thái",
+    "formula": "Câu / Tính từ + 了 (ở cuối câu)",
+    "explanation": "Đặt ở cuối câu diễn tả một tình huống mới phát sinh hoặc sự biến đổi so với trước kia.",
+    "examTip": "Phân biệt: 下雨 (Đang mưa) vs 下雨了 (Trời mưa rồi - trước đó không mưa).",
+    "examples": [
+      {
+        "hanzi": "春天来了，天气热了。",
+        "pinyinOriginal": "Chūntiān lái le, tiānqì rè le.",
+        "pinyinActual": "Chūntiān lái le, tiānqì rè le.",
+        "meaning": "Mùa xuân đến rồi, thời tiết đã nóng lên rồi.",
+        "tip": null,
+        "warning": null,
+        "audioText": "春天来了，天气热了。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_04_kuaiyao_le",
+    "hskLevel": "HSK 2",
+    "structureOrder": 4,
+    "title": "Cấu trúc tương lai gần '快要……了 / 要……了' (Sắp sửa... rồi)",
+    "formula": "Chủ ngữ + 快要 / 就要 / 要 + Động từ + 了",
+    "explanation": "Diễn tả một sự việc sắp sửa xảy ra trong một khoảng thời gian rất ngắn.",
+    "examTip": "Nếu trong câu có thời gian cụ thể (Ví dụ: 8 giờ, ngày mai), chỉ được dùng '就要……了', KHÔNG được dùng '快要……了'.",
+    "examples": [
+      {
+        "hanzi": "火车快要开了，快点儿！",
+        "pinyinOriginal": "Huǒchē kuàiyào kāi le, kuài diǎnr!",
+        "pinyinActual": "Huǒchē kuàiyào kāi le, kuài diǎnr!",
+        "meaning": "Tàu hỏa sắp chạy rồi, nhanh lên một chút!",
+        "tip": null,
+        "warning": null,
+        "audioText": "火车快要开了，快点儿！"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_05_bi_basic",
+    "hskLevel": "HSK 2",
+    "structureOrder": 5,
+    "title": "Câu so sánh hơn với chữ '比' (Bǐ) cơ bản",
+    "formula": "A + 比 + B + Tính từ",
+    "explanation": "Dùng để so sánh sự hơn kém về tính chất giữa hai đối tượng A và B.",
+    "examTip": "Điều cấm kỵ HSK 2: Cấm dùng '很', '非常' trước tính từ sau chữ 比!",
+    "examples": [
+      {
+        "hanzi": "哥哥比我高，今天比昨天冷。",
+        "pinyinOriginal": "Gēge bǐ wǒ gāo, jīntiān bǐ zuótiān lěng.",
+        "pinyinActual": "Gēge bǐ wǒ gāo, jīntiān bǐ zuótiān lěng.",
+        "meaning": "Anh trai cao hơn tôi, hôm nay lạnh hơn hôm qua.",
+        "tip": null,
+        "warning": "❌ SAI: '哥哥比我很高'.",
+        "audioText": "哥哥比我高，今天比昨天冷。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_06_adj_predicate",
+    "hskLevel": "HSK 2",
+    "structureOrder": 6,
+    "title": "Câu vị ngữ tính từ (Không dùng '是' trước tính từ)",
+    "formula": "Chủ ngữ + 很 / 非常 / 真 + Tính từ",
+    "explanation": "Tính từ có thể trực tiếp làm vị ngữ khi có phó từ chỉ mức độ đi kèm, tuyệt đối không dùng động từ '是'.",
+    "examTip": "Lỗi tư duy dịch từ tiếng Việt: 'Cô ấy là đẹp' -> ❌ 她是漂亮 -> ✔️ 她很漂亮.",
+    "examples": [
+      {
+        "hanzi": "汉语很有趣，汉字不难。",
+        "pinyinOriginal": "Hànyǔ hěn yǒuqù, hànzì bù nán.",
+        "pinyinActual": "Hànyǔ hěn yǒuqù, hànzì bù nán.",
+        "meaning": "Tiếng Trung rất thú vị, chữ Hán không khó.",
+        "tip": null,
+        "warning": "❌ SAI: '汉语是有趣'.",
+        "audioText": "汉语很有趣，汉字不难。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_07_wang_xiang",
+    "hskLevel": "HSK 2",
+    "structureOrder": 7,
+    "title": "Giới từ chỉ phương hướng '往 / 向' (Hướng về phía...)",
+    "formula": "往 / 向 + Phương hướng + Động từ (走 / 拐 / 看)",
+    "explanation": "Biểu thị phương hướng của hành động chuyển động.",
+    "examTip": "Mẫu câu hỏi đường HSK 2: 往前走 (Đi về phía trước), 往右拐 (Rẽ sang phải).",
+    "examples": [
+      {
+        "hanzi": "往前一直走，到路口往左拐。",
+        "pinyinOriginal": "Wǎng qián yìzhí zǒu, dào lùkǒu wǎng zuǒ guǎi.",
+        "pinyinActual": "Wǎng qián yìzhí zǒu, dào lùkǒu wǎng zuǒ guǎi.",
+        "meaning": "Cứ đi thẳng về phía trước, đến ngã rẽ thì rẽ trái.",
+        "tip": null,
+        "warning": null,
+        "audioText": "往前一直走，到路口往左拐。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_08_yinwei_suoyi",
+    "hskLevel": "HSK 2",
+    "structureOrder": 8,
+    "title": "Cặp liên từ nhân quả '因为……所以……' (Vì... nên...)",
+    "formula": "因为 + Nguyên nhân，所以 + Kết quả",
+    "explanation": "Biểu thị mối quan hệ nguyên nhân và kết quả rõ ràng giữa hai phân câu.",
+    "examTip": "Trong giao tiếp có thể lược bỏ '因为' hoặc '所以', nhưng đề thi HSK 2 thường đi liền cả cặp.",
+    "examples": [
+      {
+        "hanzi": "因为今天下雨，所以我没去跑步。",
+        "pinyinOriginal": "Yīnwèi jīntiān xià yǔ, suǒyǐ wǒ méi qù pǎobù.",
+        "pinyinActual": "Yīnwèi jīntiān xià yǔ, suǒyǐ wǒ méi qù pǎobù.",
+        "meaning": "Vì hôm nay trời mưa, nên tôi không đi chạy bộ.",
+        "tip": null,
+        "warning": null,
+        "audioText": "因为今天下雨，所以我没去跑步。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_09_suiran_danshi",
+    "hskLevel": "HSK 2",
+    "structureOrder": 9,
+    "title": "Cặp liên từ chuyển ý '虽然……但是……' (Tuy... nhưng...)",
+    "formula": "虽然 + Vế nhượng bộ，但是 + Vế chuyển ý",
+    "explanation": "Thừa nhận vế đầu nhưng nhấn mạnh nội dung chuyển tiếp ở vế sau.",
+    "examTip": "Điểm chốt nối câu trong bài Đọc hiểu HSK 2.",
+    "examples": [
+      {
+        "hanzi": "虽然学汉语很难，但是我非常喜欢。",
+        "pinyinOriginal": "Suīrán xué Hànyǔ hěn nán, dànshì wǒ fēicháng xǐhuan.",
+        "pinyinActual": "Suīrán xué Hànyǔ hěn nán, dànshì wǒ fēicháng xǐhuan.",
+        "meaning": "Tuy học tiếng Trung rất khó, nhưng tôi vô cùng yêu thích.",
+        "tip": null,
+        "warning": null,
+        "audioText": "虽然学汉语很难，但是我非常喜欢。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_10_zhe_status",
+    "hskLevel": "HSK 2",
+    "structureOrder": 10,
+    "title": "Trợ từ động thái '着' (Zhe) — Duy trì trạng thái",
+    "formula": "Động từ + 着 + (Tân ngữ)",
+    "explanation": "Diễn tả một trạng thái hoặc tư thế đang được duy trì liên tục (Mở cửa, đeo kính, cười...).",
+    "examTip": "Cấu trúc 'V1 + 着 + V2': Làm V2 trong trạng thái V1 (Ví dụ: 站着说话 - Đứng nói chuyện).",
+    "examples": [
+      {
+        "hanzi": "门开着呢，他笑着跟我说话。",
+        "pinyinOriginal": "Mén kāi zhe ne, tā xiào zhe gēn wǒ shuōhuà.",
+        "pinyinActual": "Mén kāi zhe ne, tā xiào zhe gēn wǒ shuōhuà.",
+        "meaning": "Cửa đang mở đấy, anh ấy vừa cười vừa nói chuyện với tôi.",
+        "tip": null,
+        "warning": null,
+        "audioText": "门开着呢，他笑着跟我说话。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_11_guo_experience",
+    "hskLevel": "HSK 2",
+    "structureOrder": 11,
+    "title": "Trợ từ động thái '过' (Guo) — Đã từng trải qua kinh nghiệm",
+    "formula": "Khẳng định: S + Động từ + 过 + O | Phủ định: S + 没(有) + Động từ + 过 + O",
+    "explanation": "Biểu thị một hành động hoặc trải nghiệm đã từng xảy ra trong quá khứ và nay không còn tiếp diễn.",
+    "examTip": "Phủ định của '过' luôn dùng '没(有)' và VẪN GIỮ NGUYÊN chữ '过' (khác với 了 phải bỏ 了).",
+    "examples": [
+      {
+        "hanzi": "我去过北京，但没吃过烤鸭。",
+        "pinyinOriginal": "Wǒ qù guo Běijīng, dàn méi chī guo kǎoyā.",
+        "pinyinActual": "Wǒ qù guo Běijīng, dàn méi chī guo kǎoyā.",
+        "meaning": "Tôi đã từng đi Bắc Kinh, nhưng chưa từng ăn vịt quay.",
+        "tip": null,
+        "warning": null,
+        "audioText": "我去过北京，但没吃过烤鸭。"
+      }
+    ]
+  },
+  {
+    "id": "hsk2_12_de_shihou",
+    "hskLevel": "HSK 2",
+    "structureOrder": 12,
+    "title": "Cấu trúc thời điểm '……的时候' (Lúc / Khi...)",
+    "formula": "Động từ / Cụm từ + 的时候，……",
+    "explanation": "Diễn tả một thời điểm hoặc khoảng thời gian khi một hành động khác đang xảy ra.",
+    "examTip": "Phân biệt '什么时候' (Khi nào - câu hỏi) với '……的时候' (Lúc... - câu trần thuật).",
+    "examples": [
+      {
+        "hanzi": "我睡觉的时候，请不要打电话。",
+        "pinyinOriginal": "Wǒ shuìjiào de shíhou, qǐng bú yào dǎ diànhuà.",
+        "pinyinActual": "Wǒ shuìjiào de shíhou, qǐng bú yào dǎ diànhuà.",
+        "meaning": "Lúc tôi đang ngủ, làm ơn đừng gọi điện thoại.",
+        "tip": null,
+        "warning": null,
+        "audioText": "我睡觉的时候，请不要打电话。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_01_ba_sentence",
+    "hskLevel": "HSK 3",
+    "structureOrder": 1,
+    "title": "Câu chữ '把' (Bǎ) — Xử lý và tác động đối tượng",
+    "formula": "Chủ ngữ + 把 + Tân ngữ + Động từ + Thành phần khác (Kết quả/Xu hướng/了/给我...)",
+    "explanation": "Dùng khi chủ ngữ thực hiện một hành động làm di chuyển, biến đổi trạng thái hoặc xử lý xong một đối tượng xác định. Động từ không được đứng đơn độc!",
+    "examTip": "Điểm ngữ pháp xuất hiện nhiều nhất trong phần Sắp xếp câu HSK 3: Luôn đưa tân ngữ lên sau chữ 把 rồi mới đến động từ!",
+    "examples": [
+      {
+        "hanzi": "请把作业交给我，把门关上。",
+        "pinyinOriginal": "Qǐng bǎ zuòyè jiāo gěi wǒ, bǎ mén guān shang.",
+        "pinyinActual": "Qǐng bǎ zuòyè jiāo gěi wǒ, bǎ mén guān shang.",
+        "meaning": "Làm ơn nộp bài tập cho tôi, đóng cửa lại.",
+        "tip": null,
+        "warning": "❌ SAI: '请把门关' (thiếu thành phần bổ trợ kết quả).",
+        "audioText": "请把作业交给我，把门关上。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_02_bi_advanced",
+    "hskLevel": "HSK 3",
+    "structureOrder": 2,
+    "title": "Câu so sánh '比' nâng cao (+ 一点儿 / 多了 / 得多)",
+    "formula": "A + 比 + B + Tính từ + (一点儿 / 得多 / 多了 / Số lượng cụ thể)",
+    "explanation": "Dùng để biểu thị mức độ chênh lệch ít (一点儿) hoặc nhiều (得多 / 多了) giữa hai đối tượng.",
+    "examTip": "Bẫy số 1 HSK 3: Đề thi thường cố tình chèn chữ '很' vào câu chữ 比 để bẫy thí sinh. Tuyệt đối không có 很!",
+    "examples": [
+      {
+        "hanzi": "他比我大三岁，今天比昨天暖和得多。",
+        "pinyinOriginal": "Tā bǐ wǒ dà sān suì, jīntiān bǐ zuótiān nuǎnhuo de duō.",
+        "pinyinActual": "Tā bǐ wǒ dà sān suì, jīntiān bǐ zuótiān nuǎnhuo de duō.",
+        "meaning": "Anh ấy lớn hơn tôi ba tuổi, hôm nay ấm áp hơn hôm qua rất nhiều.",
+        "tip": null,
+        "warning": "❌ CẤM: '今天比昨天很暖和'.",
+        "audioText": "他比我大三岁，今天比昨天暖和得多。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_03_result_complement",
+    "hskLevel": "HSK 3",
+    "structureOrder": 3,
+    "title": "Bổ ngữ kết quả (Động từ + 完, 到, 见, 懂, 错, 好)",
+    "formula": "Động từ + Bổ ngữ kết quả (+ Tân ngữ + 了)",
+    "explanation": "Bổ ngữ kết quả đứng ngay sau động từ để biểu thị hành động đã đạt được kết quả như thế nào (xong, thấy, hiểu, sai, tốt).",
+    "examTip": "Phủ định của bổ ngữ kết quả BẮT BUỘC dùng '没' hoặc '没有', không dùng '不'.",
+    "examples": [
+      {
+        "hanzi": "我听懂了老师的话，做完了作业。",
+        "pinyinOriginal": "Wǒ tīngdǒng le lǎoshī de huà, zuòwán le zuòyè.",
+        "pinyinActual": "Wǒ tīngdǒng le lǎoshī de huà, zuòwán le zuòyè.",
+        "meaning": "Tôi đã nghe hiểu lời thầy giáo, làm xong bài tập về nhà.",
+        "tip": null,
+        "warning": null,
+        "audioText": "我听懂了老师的话，做完了作业。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_04_direction_complement",
+    "hskLevel": "HSK 3",
+    "structureOrder": 4,
+    "title": "Bổ ngữ xu hướng đơn & kép (来 / 去 / 上来 / 下去...)",
+    "formula": "Động từ + 来 / 去 (Đơn) HOẶC Động từ + 上/下/进/出/回/过/起 + 来/去 (Kép)",
+    "explanation": "Hướng về phía người nói dùng '来', hướng ra xa người nói dùng '去'. Nếu có tân ngữ chỉ nơi chốn, tân ngữ BẮT BUỘC đứng trước 来/去.",
+    "examTip": "Quy tắc nơi chốn: 回家去 (Về nhà), 进教室来 (Vào lớp). CẤM nói 回去家!",
+    "examples": [
+      {
+        "hanzi": "他从楼上跑下来，走进了办公室。",
+        "pinyinOriginal": "Tā cóng lóushàng pǎo xialai, zǒujìn le bàngōngshì.",
+        "pinyinActual": "Tā cóng lóushàng pǎo xialai, zǒujìn le bàngōngshì.",
+        "meaning": "Anh ấy từ trên lầu chạy xuống, bước vào trong văn phòng.",
+        "tip": null,
+        "warning": null,
+        "audioText": "他从楼上跑下来，走进了办公室。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_05_state_complement",
+    "hskLevel": "HSK 3",
+    "structureOrder": 5,
+    "title": "Bổ ngữ trạng thái (Động từ + 得 + Tính từ)",
+    "formula": "Động từ + 得 + Tính từ / Cụm miêu tả",
+    "explanation": "Dùng để đánh giá hoặc miêu tả mức độ, kết quả của một hành động đã diễn ra thường xuyên hoặc vừa kết thúc.",
+    "examTip": "Nếu động từ có tân ngữ, bắt buộc phải lặp lại động từ: 他写汉字写得很好 (Anh ấy viết chữ Hán viết rất đẹp).",
+    "examples": [
+      {
+        "hanzi": "她说汉语说得非常流利。",
+        "pinyinOriginal": "Tā shuō Hànyǔ shuō de fēicháng liúlì.",
+        "pinyinActual": "Tā shuō Hànyǔ shuō de fēicháng liúlì.",
+        "meaning": "Cô ấy nói tiếng Trung nói rất lưu loát.",
+        "tip": null,
+        "warning": null,
+        "audioText": "她说汉语说得非常流利。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_06_potential_complement",
+    "hskLevel": "HSK 3",
+    "structureOrder": 6,
+    "title": "Bổ ngữ khả năng (Động từ + 得 / 不 + Bổ ngữ)",
+    "formula": "Khẳng định: V + 得 + Bổ ngữ | Phủ định: V + 不 + Bổ ngữ",
+    "explanation": "Biểu thị điều kiện chủ quan hoặc khách quan có cho phép hành động đạt được kết quả hay không.",
+    "examTip": "Cặp từ quen thuộc: 看得懂 (Đọc hiểu được) vs 看不懂 (Đọc không hiểu), 买得起 (Mua nổi) vs 买不起 (Không mua nổi).",
+    "examples": [
+      {
+        "hanzi": "作业太多了，我今天做不完。",
+        "pinyinOriginal": "Zuòyè tài duō le, wǒ jīntiān zuò bu wán.",
+        "pinyinActual": "Zuòyè tài duō le, wǒ jīntiān zuò bu wán.",
+        "meaning": "Bài tập nhiều quá, hôm nay tôi làm không xong nổi.",
+        "tip": null,
+        "warning": null,
+        "audioText": "作业太多了，我今天做不完。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_07_yibian_yibian",
+    "hskLevel": "HSK 3",
+    "structureOrder": 7,
+    "title": "Cấu trúc song hành đồng thời '一边……一边……' (Vừa... vừa...)",
+    "formula": "Chủ ngữ + 一边 + Động từ 1，一边 + Động từ 2",
+    "explanation": "Diễn tả hai hành động diễn ra song song cùng một thời điểm.",
+    "examTip": "Hai hành động phải có tính chất hài hòa có thể thực hiện cùng lúc (nghe nhạc, ăn cơm, nói chuyện).",
+    "examples": [
+      {
+        "hanzi": "妈妈喜欢一边做饭一边听音乐。",
+        "pinyinOriginal": "Māma xǐhuan yìbiān zuòfàn yìbiān tīng yīnyuè.",
+        "pinyinActual": "Māma xǐhuan yìbiān zuòfàn yìbiān tīng yīnyuè.",
+        "meaning": "Mẹ thích vừa nấu cơm vừa nghe âm nhạc.",
+        "tip": null,
+        "warning": null,
+        "audioText": "妈妈喜欢一边做饭一边听音乐。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_08_yue_yue",
+    "hskLevel": "HSK 3",
+    "structureOrder": 8,
+    "title": "Cấu trúc cấp tiến '越……越……' (Càng... càng...)",
+    "formula": "Chủ ngữ + 越 + Động từ / Tính từ 1 + 越 + Động từ / Tính từ 2",
+    "explanation": "Biểu thị mức độ của sự việc sau biến đổi tương ứng tỉ lệ thuận theo sự gia tăng của sự việc trước.",
+    "examTip": "Dạng rút gọn: 越来越 + Tính từ (Càng ngày càng...: 天气越来越冷).",
+    "examples": [
+      {
+        "hanzi": "这本书我越看越有意思。",
+        "pinyinOriginal": "Zhè běn shū wǒ yuè kàn yuè yǒuyìsi.",
+        "pinyinActual": "Zhè běn shū wǒ yuè kàn yuè yǒuyìsi.",
+        "meaning": "Cuốn sách này tôi càng đọc càng thấy thú vị.",
+        "tip": null,
+        "warning": null,
+        "audioText": "这本书我越看越有意思。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_09_xian_ranhou",
+    "hskLevel": "HSK 3",
+    "structureOrder": 9,
+    "title": "Trật tự hành động '先……，然后……' (Trước hết... sau đó...)",
+    "formula": "先 + Hành động 1，然后 + Hành động 2",
+    "explanation": "Diễn tả trình tự thời gian trước sau rõ ràng của các bước tiến hành công việc.",
+    "examTip": "Thường gặp trong các bài hướng dẫn quy trình, nấu ăn, làm thủ tục ở HSK 3.",
+    "examples": [
+      {
+        "hanzi": "我们先洗手，然后吃饭。",
+        "pinyinOriginal": "Wǒmen xiān xǐshǒu, ránhòu chīfàn.",
+        "pinyinActual": "Wǒmen xiān xǐshǒu, ránhòu chīfàn.",
+        "meaning": "Chúng ta rửa tay trước, sau đó mới ăn cơm.",
+        "tip": null,
+        "warning": null,
+        "audioText": "我们先洗手，然后吃饭。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_10_bei_basic",
+    "hskLevel": "HSK 3",
+    "structureOrder": 10,
+    "title": "Câu bị động với chữ '被' (Bèi) sơ cấp",
+    "formula": "Chủ ngữ + 被 (+ Tác nhân) + Động từ + Thành phần khác",
+    "explanation": "Biểu thị chủ ngữ chịu tác động của hành động. Thường mang sắc thái không may mắn hoặc khách quan.",
+    "examTip": "Trong HSK 3, sau động từ phải có thành phần bổ trợ kết quả hoặc '了'.",
+    "examples": [
+      {
+        "hanzi": "我的手机被弟弟摔坏了。",
+        "pinyinOriginal": "Wǒ de shǒujī bèi dìdi shuāi huài le.",
+        "pinyinActual": "Wǒ de shǒujī bèi dìdi shuāi huài le.",
+        "meaning": "Điện thoại của tôi bị em trai làm rơi vỡ rồi.",
+        "tip": null,
+        "warning": null,
+        "audioText": "我的手机被弟弟摔坏了。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_11_de_adverbial",
+    "hskLevel": "HSK 3",
+    "structureOrder": 11,
+    "title": "Trợ từ kết cấu '地' (De) — Trạng ngữ cách thức trước động từ",
+    "formula": "Tính từ / Cụm từ miêu tả + 地 + Động từ",
+    "explanation": "Biểu thị cách thức, trạng thái hoặc thái độ khi thực hiện hành động ('một cách vui vẻ', 'một cách chăm chỉ').",
+    "examTip": "Phân biệt bộ ba: 的 (trước danh từ), 地 (trước động từ), 得 (sau động từ).",
+    "examples": [
+      {
+        "hanzi": "同学们认真地听老师讲课。",
+        "pinyinOriginal": "Tóngxuémen rènzhēn de tīng lǎoshī jiǎngkè.",
+        "pinyinActual": "Tóngxuémen rènzhēn de tīng lǎoshī jiǎngkè.",
+        "meaning": "Các bạn học sinh chăm chú lắng nghe thầy giáo giảng bài.",
+        "tip": null,
+        "warning": null,
+        "audioText": "同学们认真地听老师讲课。"
+      }
+    ]
+  },
+  {
+    "id": "hsk3_12_chule_yiwai",
+    "hskLevel": "HSK 3",
+    "structureOrder": 12,
+    "title": "Cấu trúc '除了……以外，还 / 都……' (Ngoài... ra)",
+    "formula": "Bổ sung: 除了 A 以外，还 / 也 + B (Ngoài A ra còn có B) | Loại trừ: 除了 A 以外，都 + B (Trừ A ra, tất cả đều B)",
+    "explanation": "Dùng để diễn tả sự bổ sung thêm hoặc loại trừ một phần tử ra khỏi tập hợp.",
+    "examTip": "Gặp '都' ở vế sau -> Mang nghĩa LOẠI TRỪ (Trừ ai đó ra tất cả đều...). Gặp '还' -> Mang nghĩa BỔ SUNG THÊM.",
+    "examples": [
+      {
+        "hanzi": "除了星期天以外，图书馆每天都开门。",
+        "pinyinOriginal": "Chúle xīngqītiān yǐwài, túshūguǎn měitiān dōu kāimén.",
+        "pinyinActual": "Chúle xīngqītiān yǐwài, túshūguǎn měitiān dōu kāimén.",
+        "meaning": "Ngoại trừ Chủ nhật ra, thư viện mỗi ngày đều mở cửa.",
+        "tip": null,
+        "warning": null,
+        "audioText": "除了星期天以外，图书馆每天都开门。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_01_bei_complete",
+    "hskLevel": "HSK 4",
+    "structureOrder": 1,
+    "title": "Câu bị động chữ '被' (Bèi) hoàn chỉnh & Mẹo thi",
+    "formula": "Chủ ngữ (chịu tác động) + (没) + 被 (+ Tác nhân) + Động từ + Thành phần khác",
+    "explanation": "Biểu thị chủ ngữ chịu sự tác động của hành động. Tác nhân có thể lược bỏ. Phó từ phủ định '没' BẮT BUỘC đứng trước chữ 被.",
+    "examTip": "HSK 4 Sắp xếp câu: Tác nhân gây ra hành động có thể được lược bỏ (Ví dụ: 蛋糕被吃光了), nhưng câu chữ 把 thì bắt buộc phải có tân ngữ!",
+    "examples": [
+      {
+        "hanzi": "那个小偷终于被警察抓住了。",
+        "pinyinOriginal": "Nà ge xiǎotōu zhōngyú bèi jǐngchá zhuā zhù le.",
+        "pinyinActual": "Nà ge xiǎotōu zhōngyú bèi jǐngchá zhuā zhù le.",
+        "meaning": "Tên trộm đó cuối cùng cũng bị cảnh sát bắt được rồi.",
+        "tip": null,
+        "warning": null,
+        "audioText": "那个小偷终于被警察抓住了。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_02_bujin_erqie",
+    "hskLevel": "HSK 4",
+    "structureOrder": 2,
+    "title": "Cặp liên từ tăng tiến '不仅……而且……' (Không những... mà còn...)",
+    "formula": "Cùng chủ ngữ: CN + 不仅……，而且…… | Khác chủ ngữ: 不仅 + CN1……，而且 + CN2 也/还……",
+    "explanation": "Dùng để liên kết hai phân câu biểu thị mức độ tăng tiến về tính chất hoặc hành động.",
+    "examTip": "Bẫy vị trí chủ ngữ HSK 4: Cùng chủ ngữ -> CN đứng trước 不仅. Khác chủ ngữ -> 不仅 đứng trước Chủ ngữ 1.",
+    "examples": [
+      {
+        "hanzi": "他不仅会汉语，而且说得非常流利。",
+        "pinyinOriginal": "Tā bùjǐn huì Hànyǔ, érqiě shuō de fēicháng liúlì.",
+        "pinyinActual": "Tā bùjǐn huì Hànyǔ, érqiě shuō de fēicháng liúlì.",
+        "meaning": "Anh ấy không những biết tiếng Trung mà còn nói rất lưu loát.",
+        "tip": null,
+        "warning": null,
+        "audioText": "他不仅会汉语，而且说得非常流利。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_03_lian_ye_dou",
+    "hskLevel": "HSK 4",
+    "structureOrder": 3,
+    "title": "Cấu trúc nhấn mạnh cực hạn '连……也/都……' (Ngay cả... cũng...)",
+    "formula": "连 + Đối tượng nhấn mạnh + 也 / 都 + Động từ (phủ định hoặc khẳng định)",
+    "explanation": "Đưa trường hợp nổi bật hoặc cực đoan nhất lên đầu câu nhằm nhấn mạnh tính chất hiển nhiên của sự việc.",
+    "examTip": "Thường xuyên xuất hiện trong bài thi Viết HSK 4 để viết câu miêu tả tranh có mức độ cao hoặc ngạc nhiên.",
+    "examples": [
+      {
+        "hanzi": "这个问题太难了，连老师都不知道答案。",
+        "pinyinOriginal": "Zhè ge wèntí tài nán le, lián lǎoshī dōu bù zhīdào dá'àn.",
+        "pinyinActual": "Zhè ge wèntí tài nán le, lián lǎoshī dōu bù zhīdào dá'àn.",
+        "meaning": "Vấn đề này khó quá, ngay cả giáo viên cũng không biết câu trả lời.",
+        "tip": null,
+        "warning": null,
+        "audioText": "这个问题太难了，连老师都不知道答案。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_04_napa_ye",
+    "hskLevel": "HSK 4",
+    "structureOrder": 4,
+    "title": "Cấu trúc nhượng bộ giả thiết '哪怕……也……' (Dù cho... cũng...)",
+    "formula": "哪怕 + Tình huống khó khăn nhất，Chủ ngữ + 也 + Quyết tâm",
+    "explanation": "Biểu thị sự nhượng bộ đưa ra giả thiết ở mức cực đoan nhất nhưng kết quả hoặc quyết tâm vẫn không hề thay đổi.",
+    "examTip": "Đồng nghĩa với 即使……也…… nhưng mang sắc thái khẩu ngữ và biểu cảm mạnh mẽ hơn.",
+    "examples": [
+      {
+        "hanzi": "哪怕遇到再大的困难，我们也要坚持下去。",
+        "pinyinOriginal": "Nǎpà yùdào zài dà de kùnnan, wǒmen yě yào jiānchí xiàqù.",
+        "pinyinActual": "Nǎpà yùdào zài dà de kùnnan, wǒmen yě yào jiānchí xiàqù.",
+        "meaning": "Dù cho gặp phải khó khăn lớn đến đâu, chúng tôi cũng phải kiên trì tiếp tục.",
+        "tip": null,
+        "warning": null,
+        "audioText": "哪怕遇到再大的困难，我们也要坚持下去。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_05_jiran_jiu",
+    "hskLevel": "HSK 4",
+    "structureOrder": 5,
+    "title": "Cấu trúc nhân quả tiền đề '既然……就……' (Đã... thì...)",
+    "formula": "既然 + Thực tế đã xảy ra / Tiền đề，(Chủ ngữ) + 就 + Kết luận / Lời khuyên",
+    "explanation": "Nêu ra một sự thật hiển nhiên hoặc tiền đề đã định sẵn, từ đó rút ra kết luận logic hoặc phương hướng hành động hợp lý.",
+    "examTip": "Điểm ngữ pháp điền liên từ cố định thường gặp trong phần Đọc hiểu HSK 4.",
+    "examples": [
+      {
+        "hanzi": "既然你已经决定了，那就努力去做吧。",
+        "pinyinOriginal": "Jìrán nǐ yǐjīng juédìng le, nà jiù nǔlì qù zuò ba.",
+        "pinyinActual": "Jìrán nǐ yǐjīng juédìng le, nà jiù nǔlì qù zuò ba.",
+        "meaning": "Đã là bạn đã quyết định rồi, vậy thì hãy nỗ lực mà làm đi.",
+        "tip": null,
+        "warning": null,
+        "audioText": "既然你已经决定了，那就努力去做吧。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_06_jinguan_danshi",
+    "hskLevel": "HSK 4",
+    "structureOrder": 6,
+    "title": "Cặp liên từ tương phản '尽管……却 / 但是……' (Mặc dù... nhưng...)",
+    "formula": "尽管 + Sự thật khách quan，但是 / 却 + Kết quả tương phản",
+    "explanation": "Thừa nhận một sự thật khách quan ở vế đầu, vế sau đưa ra kết quả trái ngược với dự đoán thông thường.",
+    "examTip": "Phân biệt: 尽管 dùng cho sự thật ĐÃ CÓ THẬT; còn 即使 dùng cho GIẢ THIẾT chưa xảy ra.",
+    "examples": [
+      {
+        "hanzi": "尽管工作很辛苦，但他却从来不抱怨。",
+        "pinyinOriginal": "Jǐnguǎn gōngzuò hěn xīnkǔ, dàn tā què cónglái bù bàoyuàn.",
+        "pinyinActual": "Jǐnguǎn gōngzuò hěn xīnkǔ, dàn tā què cónglái bù bàoyuàn.",
+        "meaning": "Mặc dù công việc rất vất vả, nhưng anh ấy lại chưa từng than vãn.",
+        "tip": null,
+        "warning": null,
+        "audioText": "尽管工作很辛苦，但他却从来不抱怨。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_07_bingmei_bingbu",
+    "hskLevel": "HSK 4",
+    "structureOrder": 7,
+    "title": "Phó từ phủ định nhấn mạnh '并没有 / 并不是'",
+    "formula": "Chủ ngữ + 并没有 / 并不是 + Thành phần phủ định",
+    "explanation": "Phó từ '并' đặt trước từ phủ định (不, 没) nhằm nhấn mạnh rằng thực tế không hề giống như người khác suy nghĩ hoặc đồn đoán.",
+    "examTip": "Sử dụng '并不' hoặc '并没有' trong bài viết HSK 4 giúp bài văn có chiều sâu lập luận sắc sảo hơn.",
+    "examples": [
+      {
+        "hanzi": "事情并没有大家想象的那么复杂。",
+        "pinyinOriginal": "Shìqing bìng méiyǒu dàjiā xiǎngxiàng de nàme fùzá.",
+        "pinyinActual": "Shìqing bìng méiyǒu dàjiā xiǎngxiàng de nàme fùzá.",
+        "meaning": "Sự việc hoàn toàn không hề phức tạp như mọi người tưởng tượng.",
+        "tip": null,
+        "warning": null,
+        "audioText": "事情并没有大家想象的那么复杂。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_08_jiujing_daodi",
+    "hskLevel": "HSK 4",
+    "structureOrder": 8,
+    "title": "Phó từ truy vấn bản chất '究竟 / 到底' (Rốt cuộc là...)",
+    "formula": "Chủ ngữ + 究竟 / 到底 + Câu hỏi (Đại từ nghi vấn / Đại từ chọn lựa)？",
+    "explanation": "Dùng trong câu nghi vấn để tăng cường ngữ khí truy hỏi đến cùng căn nguyên sự việc.",
+    "examTip": "Tuyệt đối không dùng trong câu khẳng định thông thường, phải có dấu chấm hỏi hoặc từ nghi vấn đi kèm.",
+    "examples": [
+      {
+        "hanzi": "你到底想去还是不想去？",
+        "pinyinOriginal": "Nǐ dàodǐ xiǎng qù háishì bù xiǎng qù?",
+        "pinyinActual": "Nǐ dàodǐ xiǎng qù háishì bù xiǎng qù?",
+        "meaning": "Rốt cuộc bạn muốn đi hay là không muốn đi?",
+        "tip": null,
+        "warning": null,
+        "audioText": "你到底想去还是不想去？"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_09_shoudao_yinqi",
+    "hskLevel": "HSK 4",
+    "structureOrder": 9,
+    "title": "Cấu trúc bị động gián tiếp '受到…… / 引起……'",
+    "formula": "受到 + Danh từ trừu tượng (欢迎 / 批评 / 影响) | 引起 + Danh từ (重视 / 注意)",
+    "explanation": "Cách diễn đạt bị động gián tiếp thanh lịch, không cần dùng chữ 被 trong văn viết.",
+    "examTip": "Các cụm từ cố định HSK 4: 受到欢迎 (Được hoan nghênh), 引起重视 (Thu hút sự chú ý/coi trọng).",
+    "examples": [
+      {
+        "hanzi": "这个新产品受到了年轻人的热烈欢迎。",
+        "pinyinOriginal": "Zhè ge xīn chǎnpǐn shòudào le niánqīngrén de rèliè huānyíng.",
+        "pinyinActual": "Zhè ge xīn chǎnpǐn shòudào le niánqīngrén de rèliè huānyíng.",
+        "meaning": "Sản phẩm mới này đã nhận được sự hoan nghênh nồng nhiệt của giới trẻ.",
+        "tip": null,
+        "warning": null,
+        "audioText": "这个新产品受到了年轻人的热烈欢迎。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_10_wulun_dou",
+    "hskLevel": "HSK 4",
+    "structureOrder": 10,
+    "title": "Cấu trúc phi điều kiện '无论……都 / 也……' (Bất kể... đều...)",
+    "formula": "无论 + (Đại từ nghi vấn / Cặp đối lập A 还是 B)，Chủ ngữ + 都 / 也 + Kết quả",
+    "explanation": "Biểu thị trong bất kỳ hoàn cảnh hay điều kiện nào thì kết quả vẫn vẹn nguyên không thay đổi.",
+    "examTip": "Vế sau 无论 BẮT BUỘC phải chứa hình thức nghi vấn (多大, 什么, 谁, 还是), không được là khẳng định đơn lẻ.",
+    "examples": [
+      {
+        "hanzi": "无论刮风还是下雨，他都坚持锻炼。",
+        "pinyinOriginal": "Wúlùn guāfēng háishì xiàyǔ, tā dōu jiānchí duànliàn.",
+        "pinyinActual": "Wúlùn guāfēng háishì xiàyǔ, tā dōu jiānchí duànliàn.",
+        "meaning": "Bất kể là giông gió hay mưa rơi, anh ấy đều kiên trì rèn luyện thân thể.",
+        "tip": null,
+        "warning": null,
+        "audioText": "无论刮风还是下雨，他都坚持锻炼。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_11_zuoyou_dagai",
+    "hskLevel": "HSK 4",
+    "structureOrder": 11,
+    "title": "Biểu thị phạm vi ước lượng '左右' vs '大概'",
+    "formula": "Số từ + Lượng từ + 左右 (Đứng sau) | 大概 + Số từ + Lượng từ (Đứng trước)",
+    "explanation": "Đều mang nghĩa xấp xỉ, khoảng chừng. '左右' đứng SAU số lượng từ, '大概' đứng TRƯỚC số lượng từ.",
+    "examTip": "Bẫy ngữ pháp: 30岁左右 (Đúng), 左右30岁 (Sai). 大概30岁 (Đúng).",
+    "examples": [
+      {
+        "hanzi": "他大概三十岁左右，身高一米八。",
+        "pinyinOriginal": "Tā dàgài sānshí suì zuǒyòu, shēngāo yì mǐ bā.",
+        "pinyinActual": "Tā dàgài sānshí suì zuǒyòu, shēngāo yì mǐ bā.",
+        "meaning": "Anh ấy khoảng chừng 30 tuổi, chiều cao một mét tám.",
+        "tip": null,
+        "warning": null,
+        "audioText": "他大概三十岁左右，身高一米八。"
+      }
+    ]
+  },
+  {
+    "id": "hsk4_12_de_degree",
+    "hskLevel": "HSK 4",
+    "structureOrder": 12,
+    "title": "Trợ từ kết cấu '得' trong bổ ngữ mức độ ('V + 得 + 很 / 不得了')",
+    "formula": "Động từ / Tính từ + 得 + (很 / 不得了 / 要命)",
+    "explanation": "Dùng để biểu thị mức độ cực kỳ cao của trạng thái hoặc cảm xúc.",
+    "examTip": "Cụm thành ngữ cố định HSK 4: 高兴得不得了 (Vui mừng khôn xiết), 累得要命 (Mệt muốn xỉu).",
+    "examples": [
+      {
+        "hanzi": "听到这个好消息，他高兴得跳了起来。",
+        "pinyinOriginal": "Tīngdào zhè ge hǎo xiāoxi, tā gāoxìng de tiào le qǐlai.",
+        "pinyinActual": "Tīngdào zhè ge hǎo xiāoxi, tā gāoxìng de tiào le qǐlai.",
+        "meaning": "Nghe được tin tốt này, anh ấy vui mừng đến mức nhảy cẫng lên.",
+        "tip": null,
+        "warning": null,
+        "audioText": "听到这个好消息，他高兴得跳了起来。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_01_suo_de",
+    "hskLevel": "HSK 5",
+    "structureOrder": 1,
+    "title": "Trợ từ kết cấu trang trọng '所' (所 + V + 的 + N)",
+    "formula": "Chủ ngữ + 所 + Động từ + 的 + Danh từ trung tâm",
+    "explanation": "Thường dùng trong văn viết trang trọng, đứng trước động từ để biến cụm động từ thành định ngữ làm rõ đặc tính cho danh từ phía sau.",
+    "examTip": "Bài đọc hiểu HSK 5: Cụm '所 + Động từ' luôn biểu thị đối tượng hoặc nội dung chịu tác động của hành động đó.",
+    "examples": [
+      {
+        "hanzi": "这就是我们所面对的最大困难。",
+        "pinyinOriginal": "Zhè jiù shì wǒmen suǒ miànduì de zuì dà kùnnan.",
+        "pinyinActual": "Zhè jiù shì wǒmen suǒ miànduì de zuì dà kùnnan.",
+        "meaning": "Đây chính là khó khăn lớn nhất mà chúng ta đang phải đối mặt.",
+        "tip": null,
+        "warning": null,
+        "audioText": "这就是我们所面对的最大困难。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_02_yuqi_buru",
+    "hskLevel": "HSK 5",
+    "structureOrder": 2,
+    "title": "Cặp liên từ lựa chọn dứt khoát '与其……不如……' (Thà... còn hơn...)",
+    "formula": "与其 + Phương án A，不如 + Phương án B",
+    "explanation": "So sánh hai phương án và đưa ra quyết định thiên về phương án B vì có tính hợp lý và tối ưu hơn.",
+    "examTip": "Điểm ngữ pháp kiểm tra thường xuyên trong bài thi Điền từ HSK 5. Phương án sau 不如 luôn là phương án được chọn.",
+    "examples": [
+      {
+        "hanzi": "与其坐在家里抱怨，不如现在就行动。",
+        "pinyinOriginal": "Yǔqí zuò zài jiālǐ bàoyuàn, bùrú xiànzài jiù xíngdòng.",
+        "pinyinActual": "Yǔqí zuò zài jiālǐ bàoyuàn, bùrú xiànzài jiù xíngdòng.",
+        "meaning": "Thà bây giờ hành động ngay còn hơn ngồi ở nhà than vãn.",
+        "tip": null,
+        "warning": null,
+        "audioText": "与其坐在家里抱怨，不如现在就行动。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_03_fei_buke",
+    "hskLevel": "HSK 5",
+    "structureOrder": 3,
+    "title": "Cấu trúc bắt buộc kiên quyết '非……不可' (Không thể không / Nhất định phải)",
+    "formula": "Chủ ngữ + 非 + Hành động + 不可",
+    "explanation": "Biểu thị ý chí quyết tâm cao độ hoặc tính tất yếu không thể tránh khỏi của sự việc.",
+    "examTip": "Tương đương với 一定要 nhưng mang sắc thái ngữ khí kiên quyết gấp bội.",
+    "examples": [
+      {
+        "hanzi": "为了实现梦想，他非考上这所大学不可。",
+        "pinyinOriginal": "Wèile shíxiàn mèngxiǎng, tā fēi kǎoshàng zhè suǒ dàxué bùkě.",
+        "pinyinActual": "Wèile shíxiàn mèngxiǎng, tā fēi kǎoshàng zhè suǒ dàxué bùkě.",
+        "meaning": "Để thực hiện ước mơ, anh ấy nhất định phải thi đỗ vào trường đại học này.",
+        "tip": null,
+        "warning": null,
+        "audioText": "为了实现梦想，他非考上这所大学不可。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_04_conger",
+    "hskLevel": "HSK 5",
+    "structureOrder": 4,
+    "title": "Liên từ kết quả logic '从而' (Từ đó dẫn đến...)",
+    "formula": "Hành vi / Biện pháp ở vế 1，从而 + Kết quả logic hoặc mục đích ở vế 2",
+    "explanation": "Nối liền giữa phương pháp hành động ở vế trước với kết quả tất yếu hoặc mục tiêu đạt được ở vế sau.",
+    "examTip": "Chỉ dùng trong văn viết chính luận HSK 5, không dùng trong văn nói sinh hoạt đời thường.",
+    "examples": [
+      {
+        "hanzi": "新技术提高了生产效率，从而降低了成本。",
+        "pinyinOriginal": "Xīn jìshù tígāo le shēngchǎn xiàolǜ, cóng'ér jiàngdī le chéngběn.",
+        "pinyinActual": "Xīn jìshù tígāo le shēngchǎn xiàolǜ, cóng'ér jiàngdī le chéngběn.",
+        "meaning": "Công nghệ mới đã nâng cao hiệu suất sản xuất, từ đó hạ thấp giá thành.",
+        "tip": null,
+        "warning": null,
+        "audioText": "新技术提高了生产效率，从而降低了成本。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_05_weimian",
+    "hskLevel": "HSK 5",
+    "structureOrder": 5,
+    "title": "Phó từ phê bình nhã nhặn '未免' (E rằng có phần...)",
+    "formula": "未免 + 太 / 过分 / (tính từ tiêu cực)",
+    "explanation": "Dùng để biểu thị sự đánh giá không tán thành nhưng với giọng điệu khách quan, lịch thiệp và chừng mực.",
+    "examTip": "Bẫy nhận diện câu sai: '未免' không đi kèm từ phủ định '不'!",
+    "examples": [
+      {
+        "hanzi": "仅仅因为一次失误就全盘否定他，未免有失公允。",
+        "pinyinOriginal": "Jǐnjǐn yīnwèi yí cì shīwù jiù quánpán fǒudìng tā, wèimiǎn yǒushī gōngyǔn.",
+        "pinyinActual": "Jǐnjǐn yīnwèi yí cì shīwù jiù quánpán fǒudìng tā, wèimiǎn yǒushī gōngyǔn.",
+        "meaning": "Chỉ vì một lần sai sót mà phủ nhận hoàn toàn anh ấy, e rằng có phần thiếu công bằng.",
+        "tip": null,
+        "warning": null,
+        "audioText": "仅仅因为一次失误就全盘否定他，未免有失公允。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_06_yi_wei",
+    "hskLevel": "HSK 5",
+    "structureOrder": 6,
+    "title": "Cấu trúc mục đích '以……为……' (Lấy... làm...)",
+    "formula": "以 + Đối tượng A + 为 + Tiêu chuẩn / Mục tiêu B",
+    "explanation": "Dùng để nêu rõ kim chỉ nam, tiêu chuẩn hoặc đối tượng cốt lõi hướng đến của hành động.",
+    "examTip": "Thành ngữ & khẩu hiệu thường gặp: 以人为本 (Lấy con người làm gốc), 以质取胜 (Lấy chất lượng làm thắng lợi).",
+    "examples": [
+      {
+        "hanzi": "我们公司始终以顾客满意为最高宗旨。",
+        "pinyinOriginal": "Wǒmen gōngsī shǐzhōng yǐ gùkè mǎnyì wéi zuìgāo zōngzhǐ.",
+        "pinyinActual": "Wǒmen gōngsī shǐzhōng yǐ gùkè mǎnyì wéi zuìgāo zōngzhǐ.",
+        "meaning": "Công ty chúng tôi luôn lấy sự hài lòng của khách hàng làm tôn chỉ tối cao.",
+        "tip": null,
+        "warning": null,
+        "audioText": "我们公司始终以顾客满意为最高宗旨。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_07_jianyu",
+    "hskLevel": "HSK 5",
+    "structureOrder": 7,
+    "title": "Cấu trúc nêu căn cứ bối cảnh '鉴于……' (Xét thấy / Căn cứ vào)",
+    "formula": "鉴于 + Tình hình thực tế / Bối cảnh khách quan，Chủ ngữ + Quyết định / Biện pháp",
+    "explanation": "Dùng trong văn kiện chính thức, báo chí và văn bản kinh tế để nêu căn cứ quan trọng trước khi đưa ra quyết sách.",
+    "examTip": "Thường đứng ở đầu câu, là dấu hiệu nhận biết luận cứ của toàn đoạn văn.",
+    "examples": [
+      {
+        "hanzi": "鉴于目前的经济形势，公司决定调整投资战略。",
+        "pinyinOriginal": "Jiànyú mùqián de jīngjì xíngshì, gōngsī juédìng tiáozhěng tóuzī zhànlüè.",
+        "pinyinActual": "Jiànyú mùqián de jīngjì xíngshì, gōngsī juédìng tiáozhěng tóuzī zhànlüè.",
+        "meaning": "Xét thấy tình hình kinh tế hiện tại, công ty quyết định điều chỉnh chiến lược đầu tư.",
+        "tip": null,
+        "warning": null,
+        "audioText": "鉴于目前的经济形势，公司决定调整投资战略。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_08_jishi_ye",
+    "hskLevel": "HSK 5",
+    "structureOrder": 8,
+    "title": "Giả thiết nhượng bộ '即使……也……' (Cho dù... vẫn...)",
+    "formula": "即使 + Giả thiết bất lợi，Chủ ngữ + 也 + Không đổi",
+    "explanation": "Đưa ra giả thiết ở mức khó khăn nhất nhưng khẳng định hành động và bản chất không thay đổi.",
+    "examTip": "Phân biệt: 虽然 là nhượng bộ sự thật có thật; 即使 là nhượng bộ giả định chưa thành.",
+    "examples": [
+      {
+        "hanzi": "即使工作再忙，他每天也坚持阅读一小时。",
+        "pinyinOriginal": "Jíshǐ gōngzuò zài máng, tā měitiān yě jiānchí yuèdú yì xiǎoshí.",
+        "pinyinActual": "Jíshǐ gōngzuò zài máng, tā měitiān yě jiānchí yuèdú yì xiǎoshí.",
+        "meaning": "Cho dù công việc bận rộn đến đâu, anh ấy mỗi ngày vẫn kiên trì đọc sách một giờ.",
+        "tip": null,
+        "warning": null,
+        "audioText": "即使工作再忙，他每天也坚持阅读一小时。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_09_zi_yilai",
+    "hskLevel": "HSK 5",
+    "structureOrder": 9,
+    "title": "Mốc giới hạn thời gian '自……以来' (Kể từ... đến nay)",
+    "formula": "自 + Mốc thời gian / Sự kiện + 以来，……",
+    "explanation": "Xác định khoảng thời gian liên tục tính từ một mốc thời điểm hoặc sự kiện trọng đại trong quá khứ kéo dài đến hiện tại.",
+    "examTip": "Hay kết hợp: 自古以来 (Từ xưa đến nay), 自改革开放以来 (Kể từ khi cải cách mở cửa đến nay).",
+    "examples": [
+      {
+        "hanzi": "自毕业以来，我们一直保持着密切联系。",
+        "pinyinOriginal": "Zì bìyè yǐlái, wǒmen yìzhí bǎochí zhe mìqiè liánxì.",
+        "pinyinActual": "Zì bìyè yǐlái, wǒmen yìzhí bǎochí zhe mìqiè liánxì.",
+        "meaning": "Kể từ khi tốt nghiệp đến nay, chúng tôi luôn duy trì liên lạc mật thiết.",
+        "tip": null,
+        "warning": null,
+        "audioText": "自毕业以来，我们一直保持着密切联系。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_10_hebi_hechang",
+    "hskLevel": "HSK 5",
+    "structureOrder": 10,
+    "title": "Phó từ phản vấn '何必 / 何尝' (Cần gì phải / Có bao giờ...)",
+    "formula": "何必 + Động từ + 呢？ (Cần gì phải...) | 何尝 + 不 / 没 + Động từ (Có bao giờ không...)",
+    "explanation": "Dùng phản vấn nhằm khuyên nhủ người nghe không cần thiết phải làm gì, hoặc khẳng định mạnh mẽ rằng bản thân đã từng nếm trải.",
+    "examTip": "何尝 không mang nghĩa phủ định đơn thuần, mà là phủ định kép để nhấn mạnh sự đồng cảm sâu sắc.",
+    "examples": [
+      {
+        "hanzi": "既然是一场误会，你又何必耿耿于怀呢？",
+        "pinyinOriginal": "Jìrán shì yì chǎng wùhuì, nǐ yòu hébì gěnggěngyúhuái ne?",
+        "pinyinActual": "Jìrán shì yì chǎng wùhuì, nǐ yòu hébì gěnggěngyúhuái ne?",
+        "meaning": "Đã là một sự hiểu lầm, bạn việc gì phải canh cánh trong lòng làm chi?",
+        "tip": null,
+        "warning": null,
+        "audioText": "既然是一场误会，你又何必耿耿于怀呢？"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_11_you_zucheng",
+    "hskLevel": "HSK 5",
+    "structureOrder": 11,
+    "title": "Cấu trúc thành phần cấu tạo '由……组成 / 决定' (Do... tạo thành)",
+    "formula": "Chủ ngữ + 由 + Thành phần cấu thành + 组成 / 构成",
+    "explanation": "Dùng trong văn bản học thuật để miêu tả cấu trúc, cơ cấu tổ chức hoặc nguồn gốc quyết định của sự vật.",
+    "examTip": "Mẫu câu ăn điểm phần Viết HSK 5 khi mô tả biểu đồ hoặc cơ cấu hệ thống.",
+    "examples": [
+      {
+        "hanzi": "这个研究团队由来自五个国家的顶尖学者组成。",
+        "pinyinOriginal": "Zhè ge yánjiū tuánduì yóu láizì wǔ ge guójiā de dǐngjiān xuézhě zǔchéng.",
+        "pinyinActual": "Zhè ge yánjiū tuánduì yóu láizì wǔ ge guójiā de dǐngjiān xuézhě zǔchéng.",
+        "meaning": "Đội ngũ nghiên cứu này được cấu thành bởi các học giả hàng đầu đến từ năm quốc gia.",
+        "tip": null,
+        "warning": null,
+        "audioText": "这个研究团队由来自五个国家的顶尖学者组成。"
+      }
+    ]
+  },
+  {
+    "id": "hsk5_12_idioms_grammar",
+    "hskLevel": "HSK 5",
+    "structureOrder": 12,
+    "title": "Thành ngữ 4 chữ đóng vai trò kết cấu ngữ pháp (Chủ vị & Bổ ngữ)",
+    "formula": "Thành ngữ đóng vai trò Vị ngữ / Bổ ngữ / Định ngữ độc lập",
+    "explanation": "Các thành ngữ HSK 5 như 一举两得, 半途而废, 丰富多彩 được lồng ghép như một vị ngữ hoặc bổ ngữ hoàn chỉnh trong câu.",
+    "examTip": "Bài thi viết HSK 5: Dùng đúng 1 thành ngữ 4 chữ vào câu kết luận sẽ được cộng điểm tối đa phần từ vựng.",
+    "examples": [
+      {
+        "hanzi": "学外语最忌讳半途而废，坚持到底才能成功。",
+        "pinyinOriginal": "Xué wàiyǔ zuì jìhuì bàntú'érfèi, jiānchí dàodǐ cái néng chénggōng.",
+        "pinyinActual": "Xué wàiyǔ zuì jìhuì bàntú'érfèi, jiānchí dàodǐ cái néng chénggōng.",
+        "meaning": "Học ngoại ngữ kiêng kỵ nhất là bỏ dở nửa chừng, kiên trì đến cùng mới có thể thành công.",
+        "tip": null,
+        "warning": null,
+        "audioText": "学外语最忌讳半途而废，坚持到底才能成功。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_01_guran_raner",
+    "hskLevel": "HSK 6",
+    "structureOrder": 1,
+    "title": "Cặp liên từ phản biện nhượng bộ '固然……，然而/但……' (Dẫu rằng... tuy nhiên...)",
+    "formula": "Chủ ngữ + 固然……，然而 / 但是 + Luận điểm trọng tâm",
+    "explanation": "Thừa nhận tính chân thực hoặc giá trị của một mặt trước, sau đó chuyển hướng nhấn mạnh vào điểm mấu chốt đối lập mang tính quyết định.",
+    "examTip": "Cấu trúc vàng ghi điểm tuyệt đối trong bài thi Viết tóm tắt (缩写) 400 chữ của HSK 6.",
+    "examples": [
+      {
+        "hanzi": "追求速度固然重要，然而保证质量才是立足之本。",
+        "pinyinOriginal": "Zhuīqiú sùdù gùrán zhòngyào, rán'ér bǎozhèng zhìliàng cái shì lìzú zhī běn.",
+        "pinyinActual": "Zhuīqiú sùdù gùrán zhòngyào, rán'ér bǎozhèng zhìliàng cái shì lìzú zhī běn.",
+        "meaning": "Theo đuổi tốc độ dẫu rằng quan trọng, tuy nhiên bảo đảm chất lượng mới là gốc rễ để đứng vững.",
+        "tip": null,
+        "warning": null,
+        "audioText": "追求速度固然重要，然而保证质量才是立足之本。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_02_wufei",
+    "hskLevel": "HSK 6",
+    "structureOrder": 2,
+    "title": "Phó từ văn ngôn '无非 / 不过是' (Chẳng qua chỉ là...)",
+    "formula": "Chủ ngữ + 无非是 + Danh từ / Động từ",
+    "explanation": "Sử dụng từ văn ngôn cổ mang hàm ý hạ thấp mức độ nghiêm trọng, quy bản chất sự việc về mức giản đơn không có gì ghê gớm.",
+    "examTip": "Thường gặp trong các bài văn nghị luận châm biếm hoặc phê bình xã hội của HSK 6.",
+    "examples": [
+      {
+        "hanzi": "他之所以百般推脱，无非是想逃避责任罢了。",
+        "pinyinOriginal": "Tā zhī suǒyǐ bǎibān tuītuō, wúfēi shì xiǎng táobì zérèn bà le.",
+        "pinyinActual": "Tā zhī suǒyǐ bǎibān tuītuō, wúfēi shì xiǎng táobì zérèn bà le.",
+        "meaning": "Anh ta sở dĩ trăm phương nghìn kế thoái thác, chẳng qua chỉ là muốn trốn tránh trách nhiệm mà thôi.",
+        "tip": null,
+        "warning": null,
+        "audioText": "他之所以百般推脱，无非是想逃避责任罢了。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_03_jiyu_academic",
+    "hskLevel": "HSK 6",
+    "structureOrder": 3,
+    "title": "Tiền đề học thuật '基于……' (Dựa trên / Căn cứ vào)",
+    "formula": "基于 + Dữ liệu thực nghiệm / Cơ sở lý luận，Chủ ngữ + Kết luận",
+    "explanation": "Từ văn phong học thuật cao cấp nhất để trình bày nền tảng nghiên cứu và căn cứ thực chứng.",
+    "examTip": "Xuất hiện với tần suất dày đặc trong các bài đọc khoa học tự nhiên và kinh tế học HSK 6.",
+    "examples": [
+      {
+        "hanzi": "该结论是基于大量严谨的实证研究所得出的。",
+        "pinyinOriginal": "Gāi jiélùn shì jīyú dàliàng yánjǐn de shízhèng yánjiū suǒ déchū de.",
+        "pinyinActual": "Gāi jiélùn shì jīyú dàliàng yánjǐn de shízhèng yánjiū suǒ déchū de.",
+        "meaning": "Kết luận này được rút ra dựa trên khối lượng lớn các nghiên cứu thực chứng nghiêm cẩn.",
+        "tip": null,
+        "warning": null,
+        "audioText": "该结论是基于大量严谨的实证研究所得出的。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_04_zhisuoyi_shi",
+    "hskLevel": "HSK 6",
+    "structureOrder": 4,
+    "title": "Cấu trúc đảo nguyên nhân '之所以……是因为……' (Sở dĩ... là vì...)",
+    "formula": "Chủ ngữ + 之所以 + Kết quả，是因为 + Nguyên nhân sâu xa",
+    "explanation": "Đưa kết quả bất ngờ lên phía trước để tạo sự tò mò, sau đó giải thích căn nguyên mấu chốt ở vế sau.",
+    "examTip": "Công thức kinh điển trong đề thi Đọc hiểu và bài viết Tóm tắt HSK 6.",
+    "examples": [
+      {
+        "hanzi": "他之所以能取得今天的成就，是因为他有着超乎常人的毅力。",
+        "pinyinOriginal": "Tā zhī suǒyǐ néng qǔdé jīntiān de chéngjiù, shì yīnwèi tā yǒu zhe chāohū chángrén de yìlì.",
+        "pinyinActual": "Tā zhī suǒyǐ néng qǔdé jīntiān de chéngjiù, shì yīnwèi tā yǒu zhe chāohū chángrén de yìlì.",
+        "meaning": "Anh ấy sở dĩ có thể đạt được thành tựu như hôm nay, là vì anh ấy có một nghị lực phi thường hơn người.",
+        "tip": null,
+        "warning": null,
+        "audioText": "他之所以能取得今天的成就，是因为他有着超乎常人的毅力。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_05_qi_fanwen",
+    "hskLevel": "HSK 6",
+    "structureOrder": 5,
+    "title": "Phó từ phản vấn đanh thép '岂 / 岂不是' (Há chẳng phải là...)",
+    "formula": "岂能 + Động từ？ (Lẽ nào có thể...) | 岂不是 + Đánh giá？ (Há chẳng phải là...)",
+    "explanation": "Hình thức phản vấn văn ngôn đạt cấp độ tu từ cao nhất trong tiếng Trung hiện đại, khẳng định chắc nịch chân lý.",
+    "examTip": "Ý tứ của câu phản vấn '岂' luôn mang nghĩa khẳng định ngược lại hoàn toàn với câu hỏi bề mặt.",
+    "examples": [
+      {
+        "hanzi": "面对不公若视若无睹，岂不有愧于自己的良知？",
+        "pinyinOriginal": "Miànduì bùgōng ruò shìruòwúdǔ, qǐ bù yǒukuì yú zìjǐ de liángzhī?",
+        "pinyinActual": "Miànduì bùgōng ruò shìruòwúdǔ, qǐ bù yǒukuì yú zìjǐ de liángzhī?",
+        "meaning": "Đối mặt với sự bất công nếu như nhắm mắt làm ngơ, há chẳng phải hổ thẹn với lương tâm của chính mình sao?",
+        "tip": null,
+        "warning": null,
+        "audioText": "面对不公若视若无睹，岂不有愧于自己的良知？"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_06_shi_er_ding",
+    "hskLevel": "HSK 6",
+    "structureOrder": 6,
+    "title": "Cấu trúc biến thiên theo điều kiện '视……而定' (Tùy thuộc vào... mà định)",
+    "formula": "Quyết định / Phương án + 视 + Yếu tố biến thiên + 而定",
+    "explanation": "Diễn đạt việc một kế hoạch chưa thể chốt cứng mà phải tùy cơ ứng biến dựa trên các tham số khách quan.",
+    "examTip": "Tương đương 根据……决定 nhưng ngắn gọn, súc tích và sang trọng hơn trong văn bản hợp đồng HSK 6.",
+    "examples": [
+      {
+        "hanzi": "活动是否如期举行，需视天气情况而定。",
+        "pinyinOriginal": "Huódòng shìfǒu rúqī jǔxíng, xū shì tiānqì qíngkuàng ér dìng.",
+        "pinyinActual": "Huódòng shìfǒu rúqī jǔxíng, xū shì tiānqì qíngkuàng ér dìng.",
+        "meaning": "Sự kiện có diễn ra đúng hạn hay không, cần phải tùy thuộc vào tình hình thời tiết mà định.",
+        "tip": null,
+        "warning": null,
+        "audioText": "活动是否如期举行，需视天气情况而定。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_07_zai_zhiyu",
+    "hskLevel": "HSK 6",
+    "structureOrder": 7,
+    "title": "Cấu trúc không gian thời gian phụ trợ '在……之余' (Bên cạnh...)",
+    "formula": "在 + Hoạt động chính + 之余，Chủ ngữ + Hoạt động thư giãn / Phụ",
+    "explanation": "Chỉ thời gian nhàn rỗi hoặc khoảng trống bên cạnh công việc, học tập bận rộn.",
+    "examTip": "Cụm thường gặp: 工作之余 (Lúc rảnh sau giờ làm), 课余时间 (Thời gian ngoài giờ học).",
+    "examples": [
+      {
+        "hanzi": "他在繁忙的工作之余，还坚持从事公益活动。",
+        "pinyinOriginal": "Tā zài fánmáng de gōngzuò zhīyú, hái jiānchí cóngshì gōngyì huódòng.",
+        "pinyinActual": "Tā zài fánmáng de gōngzuò zhīyú, hái jiānchí cóngshì gōngyì huódòng.",
+        "meaning": "Bên cạnh công việc bận rộn, anh ấy vẫn kiên trì tham gia các hoạt động thiện nguyện cộng đồng.",
+        "tip": null,
+        "warning": null,
+        "audioText": "他在繁忙的工作之余，还坚持从事公益活动。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_08_suizhe_er",
+    "hskLevel": "HSK 6",
+    "structureOrder": 8,
+    "title": "Cấu trúc biến đổi đồng pha '随着……而……' (Cùng với... mà...)",
+    "formula": "随着 + Sự biến chuyển A，Chủ ngữ + 也 / 便 + 随之 / 而 + Biến chuyển B",
+    "explanation": "Chỉ sự thay đổi kéo theo của sự vật B khi sự vật A biến động theo dòng thời gian hoặc thời thế.",
+    "examTip": "Điểm ngữ pháp mô tả biến thiên số liệu kinh tế và xu hướng xã hội trong bài thi HSK 6.",
+    "examples": [
+      {
+        "hanzi": "许多传统习俗正随着时代的发展而逐渐演变。",
+        "pinyinOriginal": "Xǔduō chuántǒng xísú zhèng suízhe shídài de fāzhǎn ér zhújiàn yǎnbiàn.",
+        "pinyinActual": "Xǔduō chuántǒng xísú zhèng suízhe shídài de fāzhǎn ér zhújiàn yǎnbiàn.",
+        "meaning": "Nhiều tập tục truyền thống đang dần biến chuyển cùng với sự phát triển của thời đại.",
+        "tip": null,
+        "warning": null,
+        "audioText": "许多传统习俗正随着时代的发展而逐渐演变。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_09_bingju_rules",
+    "hskLevel": "HSK 6",
+    "structureOrder": 9,
+    "title": "Quy chuẩn nhận diện Bệnh câu HSK 6 (病句: Thiếu chủ vị, lặp ý)",
+    "formula": "Nhận diện 4 loại lỗi: 1. Thiếu chủ ngữ | 2. Kết hợp khập khiễng | 3. Lặp nghĩa | 4. Sai logic",
+    "explanation": "Phần thi khó nhất HSK 6 (Tìm câu sai trong 4 câu). Lỗi phổ biến nhất là câu dùng giới từ '经过 / 通过 / 在……中' biến toàn bộ câu thành trạng ngữ khiến câu KHÔNG CÓ CHỦ NGỮ.",
+    "examTip": "Mẹo bắt bệnh câu HSK 6: Thấy câu bắt đầu bằng '通过……使……' thì 90% là câu sai do triệt tiêu mất chủ ngữ!",
+    "examples": [
+      {
+        "hanzi": "通过这次培训，使我学到了很多实用的技能。（❌ 病句：缺少主语）",
+        "pinyinOriginal": "Tōngguò zhè cì péixùn, shǐ wǒ xuédào le hěn duō shíyòng de jìnéng.",
+        "pinyinActual": "Tōngguò zhè cì péixùn, shǐ wǒ xuédào le hěn duō shíyòng de jìnéng.",
+        "meaning": "Thông qua đợt tập huấn này, làm cho tôi học được rất nhiều kỹ năng thực tế. (❌ Câu bệnh: Thiếu chủ ngữ, phải bỏ chữ '使').",
+        "tip": null,
+        "warning": "⚠️ Lỗi kinh điển HSK 6: Bỏ chữ '通过' hoặc bỏ chữ '使' để câu có chủ ngữ chuẩn xác.",
+        "audioText": "这次培训让我学到了很多实用的技能。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_10_parallel_contrast",
+    "hskLevel": "HSK 6",
+    "structureOrder": 10,
+    "title": "Cấu trúc song hành đối ngẫu '既……又…… / 一方面……另一方面……'",
+    "formula": "一方面 + Luận điểm mặt A，另一方面 + Luận điểm mặt B",
+    "explanation": "Dùng để phân tích một sự việc đa chiều, toàn diện dưới hai góc nhìn bổ trợ hoặc đối nghịch nhau.",
+    "examTip": "Công cụ cấu trúc đoạn văn chuẩn chỉnh nhất cho bài thi Viết HSK 6.",
+    "examples": [
+      {
+        "hanzi": "我们一方面要加快经济发展，另一方面也要注重生态环境保护。",
+        "pinyinOriginal": "Wǒmen yì fāngmiàn yào jiākuài jīngjì fāzhǎn, lìng yì fāngmiàn yě yào zhùzhòng shēngtài huánjìng bǎohù.",
+        "pinyinActual": "Wǒmen yì fāngmiàn yào jiākuài jīngjì fāzhǎn, lìng yì fāngmiàn yě yào zhùzhòng shēngtài huánjìng bǎohù.",
+        "meaning": "Chúng ta một mặt phải đẩy nhanh phát triển kinh tế, mặt khác cũng phải chú trọng bảo vệ môi trường sinh thái.",
+        "tip": null,
+        "warning": null,
+        "audioText": "我们一方面要加快经济发展，另一方面也要注重生态环境保护。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_11_double_negative",
+    "hskLevel": "HSK 6",
+    "structureOrder": 11,
+    "title": "Ngữ khí phủ định kép uyển chuyển '不无 / 未尝不' (Không phải là không)",
+    "formula": "不无 + Danh từ trừu tượng (道理 / 遗憾 / 裨益) | 未尝 + 不 + Động từ",
+    "explanation": "Sử dụng hai từ phủ định đứng liền nhau để tạo nên nghĩa khẳng định nhưng với giọng văn khiêm tốn, kín đáo và uyên bác.",
+    "examTip": "不无道理 = 有道理 (Có đạo lý), 不无遗憾 = 感到遗憾 (Có phần tiếc nuối).",
+    "examples": [
+      {
+        "hanzi": "他的这番分析虽然尖锐，但细想之下却也不无道理。",
+        "pinyinOriginal": "Tā de zhè fān fēnxī suīrán jiānruì, dàn xì xiǎng zhī xià què yě bùwú dàolǐ.",
+        "pinyinActual": "Tā de zhè fān fēnxī suīrán jiānruì, dàn xì xiǎng zhī xià què yě bùwú dàolǐ.",
+        "meaning": "Phân tích này của anh ấy tuy sắc bén, nhưng nghĩ kỹ lại thì cũng không phải là không có đạo lý.",
+        "tip": null,
+        "warning": null,
+        "audioText": "他的这番分析虽然尖锐，但细想之下却也不无道理。"
+      }
+    ]
+  },
+  {
+    "id": "hsk6_12_zongshang_suoshu",
+    "hskLevel": "HSK 6",
+    "structureOrder": 12,
+    "title": "Cấu trúc kết luận quy nạp văn chính luận '综上所述' (Tóm lại những điều trên)",
+    "formula": "综上所述，Chủ ngữ + Kết luận tổng kết / Đề xuất tương lai",
+    "explanation": "Dùng ở đoạn cuối cùng của văn bản luận văn, bài phát biểu hoặc báo cáo tổng kết để thâu tóm toàn bộ các luận điểm đã nêu.",
+    "examTip": "Từ khóa vàng báo hiệu đoạn kết luận và quan điểm chốt hạ trong bài thi Đọc & Viết HSK 6.",
+    "examples": [
+      {
+        "hanzi": "综上所述，唯有持续创新，企业方能在激烈的国际竞争中立于不败之地。",
+        "pinyinOriginal": "Zōng shàng suǒ shù, wéiyǒu chíxù chuàngxīn, qǐyè fāng néng zài jīliè de guójì jìngzhēng zhōng lì yú búbài zhī dì.",
+        "pinyinActual": "Zōng shàng suǒ shù, wéiyǒu chíxù chuàngxīn, qǐyè fāng néng zài jīliè de guójì jìngzhēng zhōng lì yú búbài zhī dì.",
+        "meaning": "Tóm lại những điều trên, chỉ có liên tục đổi mới sáng tạo, doanh nghiệp mới có thể đứng vững ở vị thế bất bại trong cạnh tranh quốc tế khốc liệt.",
+        "tip": null,
+        "warning": null,
+        "audioText": "综上所述，唯有持续创新，企业方能在激烈的国际竞争中立于不败之地。"
+      }
+    ]
+  }
+]
