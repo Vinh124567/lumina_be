@@ -94,11 +94,14 @@ class LessonService(
         if (lessonRepository.count() == 0L) {
             syncLessonsFromResource(force = false)
         }
-        val allLessons = lessonRepository.findAllWithSlides()
+        val allLessons = if (!level.isNullOrBlank() && !level.equals("all", ignoreCase = true)) {
+            lessonRepository.findAllByLevelWithSlides(level.trim())
+        } else {
+            lessonRepository.findAllWithSlides()
+        }
         val filtered = allLessons.filter { lesson ->
-            val matchLevel = level.isNullOrBlank() || level.equals("all", ignoreCase = true) || lesson.level.equals(level, ignoreCase = true)
             val matchCategory = category.isNullOrBlank() || category.equals("all", ignoreCase = true) || lesson.category.contains(category, ignoreCase = true)
-            matchLevel && matchCategory
+            matchCategory
         }
         return filtered.map { mapToResponse(it, includeSlides = true) }
     }

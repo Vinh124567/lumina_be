@@ -12,4 +12,7 @@ interface LessonRepository : JpaRepository<Lesson, String> {
 
     @Query("SELECT DISTINCT l FROM Lesson l LEFT JOIN FETCH l.slides ORDER BY l.orderIndex ASC")
     fun findAllWithSlides(): List<Lesson>
+
+    @Query("SELECT DISTINCT l FROM Lesson l LEFT JOIN FETCH l.slides WHERE UPPER(l.level) = UPPER(:level) ORDER BY l.orderIndex ASC")
+    fun findAllByLevelWithSlides(level: String): List<Lesson>
 }

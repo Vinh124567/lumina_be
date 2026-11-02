@@ -39,6 +39,8 @@ class SecurityConfig(
                     .requestMatchers("/api/lessons/**").permitAll()
                     .requestMatchers("/api/wisdom/**").permitAll()
                     .requestMatchers("/api/vocabularies/**").permitAll()
+                    .requestMatchers("/api/leaderboard/**").permitAll()
+                    .requestMatchers("/api/user/**").permitAll()
                     .requestMatchers("/h2-console/**").permitAll()
                     .anyRequest().authenticated()
             }
